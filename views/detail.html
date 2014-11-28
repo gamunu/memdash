@@ -1,0 +1,144 @@
+<!-- layout -->
+<div id="layout" class="container-fluid">
+    <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-2 sidebar">
+            <ul id="list" class="nav nav-pills nav-stacked"></ul>
+        </div> <!-- //sidebar -->
+
+        <div id="main" class="col-md-10">
+            <div class="row">
+                <div class="col-md-8">
+                    <ol class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="active">Detail View</li>
+                    </ol>
+                </div>
+                <div class="col-md-4 timer">
+                    <span>Last Refresh: </span>
+                    <span id="refresh-time">0</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="stats-title">localhost:11211</h1>
+                </div>
+            </div>
+            
+            <!-- general-stats-->
+            <div class="row"><div id="general-stats" class="col-md-12"></div></div>
+            
+            <div class="row">
+                <!-- detail-stats -->
+                <div class="detail-stats col-md-12">
+                    <!-- tabpanel -->
+                    <div role="tabpanel">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#stats" aria-controls="stats" role="tab" data-toggle="tab">General-purpose statistics</a></li>
+                          <li role="presentation"><a href="#slabs" aria-controls="slabs" role="tab" data-toggle="tab">Slab statistics</a></li>
+                          <li role="presentation"><a href="#sizes" aria-controls="sizes" role="tab" data-toggle="tab">
+                      Item size statistics</a></li>
+                          <li role="presentation"><a href="#items" aria-controls="items" role="tab" data-toggle="tab">Item statistics</a></li>
+                          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings statistics</a></li>
+                        </ul>
+                        
+                        <!-- tab-content -->
+                        <div class="tab-content">
+                            <!-- stats -->
+                            <div id="stats" role="tabpanel" class="tab-pane active table-responsive">
+                                <table id="statics-table" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div> <!-- //stats -->
+                            <!-- slabs -->
+                            <div id="slabs" role="tabpanel" class="tab-pane table-responsive">
+                                <table id="slabs-table" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div> <!-- //slabs -->
+                            <!-- sizes -->
+                            <div id="sizes" role="tabpanel" class="tab-pane table-responsive">
+                                <button type="button" id="getitemstats" class="btn btn-danger" data-toggle="tooltip" data-placement="left" rel="tooltip" title="This will lockdown memcache server for few seconds">Get Item Stats</button>
+                                <table id="sizes-table" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Count</th>
+                                        </tr>
+                                    </tfoot>
+                                    </table>
+                            </div> <!-- //sizes -->
+                            <!-- items -->
+                            <div id="items" role="tabpanel" class="tab-pane table-responsive">
+                                <table id="items-table" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </tfoot>
+                                    </table>
+                            </div> <!-- items -->
+                            <!-- settings -->
+                            <div id="settings" role="tabpanel" class="tab-pane table-responsive">
+                                <table id="settings-table" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Statistic</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                <tbody></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Statistic</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </tfoot>
+                                </table>
+                            </div> <!-- //settings -->
+                        </div> <!-- //tab-content -->
+                    </div> <!-- //tab-panel -->
+                </div> <!-- //detail-stats -->
+            </div>
+        </div> <!-- main -->
+    </div> <!-- row -->
+</div> <!-- layout  -->

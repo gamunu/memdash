@@ -1,0 +1,66 @@
+<!-- layout -->
+<div id="layout" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+             <div class="row">
+                <div class="col-md-8">
+                    <ol class="breadcrumb">
+                        <li class="active">Home</li>
+                    </ol>
+                </div>
+                <div class="col-md-4 timer">
+                    <span>Last Refresh: </span>
+                    <span id="refresh-time">0</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Servers</h2>
+                        </div>
+                        <div class="col-md-11 col-md-offset">
+                            <div class="row server-onoff"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Overall Statistics</h2>
+                        </div>
+                        <div id="general-stats" class="col-md-12"></div> 
+                    </div>
+                </div>
+                <!-- detail-stats -->
+                <div class="detail-stats col-md-12">
+                    <table id="global-statics-table" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Server</th>
+                                <th>Version</th>
+                                <th>Total Items</th>
+                                <th>Time</th>
+                                <th>Uptime</th>
+                                <th>Total Connections</th>
+                                <th>Current Connections</th>
+                                <th>Storage Available (Mb)</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Server</th>
+                                <th>Version</th>
+                                <th>Total Items</th>
+                                <th>Time</th>
+                                <th>Uptime</th>
+                                <th>Total Connections</th>
+                                <th>Current Connections</th>
+                                <th>Storage Available (Mb)</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div> <!-- //detail-stats -->
+            </div>
+       </div> <!-- //col-md12 -->
+   </div>
+</div> <!-- //layout -->
