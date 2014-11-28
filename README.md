@@ -1,6 +1,5 @@
-#memdash
+##memdash
 =======
-
 A dashboard for clustered memcached servers
 
 ![Screenshot of memdash](https://github.com/gamunuud/memdash/raw/screenshot.png)
