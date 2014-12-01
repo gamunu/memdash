@@ -7,7 +7,6 @@ import cherrypy
 from lib import mdatabase, root, admin
 import win32serviceutil
 import win32service
-DB_STRING = "serv.db"
 
 class MDashService(win32serviceutil.ServiceFramework):
     """MemDash NT Service."""
@@ -38,7 +37,7 @@ class MDashService(win32serviceutil.ServiceFramework):
             }
         }
 
-        database = mdatabase.MDatabase(DB_STRING)
+        database = mdatabase.MDatabase(dbname='memdash', dbuser='root', dbpass='mariadb'):
         cherrypy.engine.subscribe('start', database.setup_database)
         
         #Do not uncomment this will whipe whole database
