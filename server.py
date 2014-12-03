@@ -3,7 +3,6 @@
 import os, os.path
 import cherrypy
 from lib import mdatabase, root, admin
-DB_STRING = "serv.db"
 
 def main():
     '''Main server entre'''
@@ -30,8 +29,7 @@ def main():
         }
     }
 
-    database = mdatabase.MDatabase(DB_STRING)
-    cherrypy.engine.subscribe('start', database.setup_database)
+    database = mdatabase.MDatabase('memdash','root','mariadb')
 
     #Do not uncomment this will whipe whole database
     #cherrypy.engine.subscribe('stop', db.cleanup_database)
@@ -43,4 +41,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    

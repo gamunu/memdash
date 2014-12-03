@@ -1,0 +1,14 @@
+{% set first = True -%}
+{% for server in servers -%}
+  {% if first -%}
+    <li role="presentation" data-server="{{server[0]}}" data-id="{{server[1]}}" class="active">
+    {% set first = False -%}
+  {% else -%}
+    <li role="presentation" data-server="{{server[0]}}" data-id="{{server[1]}}" class="">
+  {% endif -%}
+  {% if server[0] not in online_servers -%}
+    <a href="#">{{server[0]}}<span class="label label-danger">Offline</span></a></li>
+  {% else -%}
+    <a href="#">{{server[0]}}<span class="label label-success">Online</span></a></li>
+  {% endif -%}
+{% endfor %}

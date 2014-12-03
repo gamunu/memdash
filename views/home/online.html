@@ -1,0 +1,11 @@
+{%- for server in servers -%}
+            {% if server[0] in online_servers -%}
+                <div class="col-md-2 online">
+                    <p>{{server[0]}}<span class="label label-success">Online</span></p>
+                </div>
+            {% else -%}
+                <div class="col-md-2 offline">
+                    <p>{{server[0]}}<span class="label label-danger">Offline</span></p>
+                </div>
+                {% endif -%}
+{% endfor -%}

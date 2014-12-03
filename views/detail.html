@@ -1,3 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block body %}
+{% block navigation %}
+    {{ nav }}
+{% endblock %}
 <!-- layout -->
 <div id="layout" class="container-fluid">
     <div class="row">
@@ -27,6 +35,25 @@
             
             <!-- general-stats-->
             <div class="row"><div id="general-stats" class="col-md-12"></div></div>
+            
+            <!-- graph status -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="hits-misses"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <canvas id="graph-cmds"></canvas>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="graph-cacheditems"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
             <div class="row">
                 <!-- detail-stats -->
@@ -142,3 +169,10 @@
         </div> <!-- main -->
     </div> <!-- row -->
 </div> <!-- layout  -->
+{% include 'help.html' %}
+{% endblock %}
+{% block fscript %}
+    {{ super() }}
+    <script src="static/js/detail.min.js"></script>
+    <script src="static/js/chart.min.js"></script>
+{% endblock %}

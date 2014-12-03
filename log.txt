@@ -1,0 +1,982 @@
+[03/Dec/2014:16:06:58] ENGINE Bus STARTING
+[03/Dec/2014:16:06:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:06:58] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:06:58] ENGINE Bus STARTED
+[03/Dec/2014:16:07:01] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 312, in servers
+    d_servers = self.database.get_servers_weight()
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 55, in get_servers_weight
+    address = '{}:{}'.format(server[1], server[2])
+IndexError: tuple index out of range
+
+[03/Dec/2014:16:07:29] ENGINE Bus STOPPING
+[03/Dec/2014:16:07:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:07:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:07:29] ENGINE Bus STOPPED
+[03/Dec/2014:16:07:29] ENGINE Bus EXITING
+[03/Dec/2014:16:07:29] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:07:29] ENGINE Bus EXITED
+[03/Dec/2014:16:07:33] ENGINE Bus STARTING
+[03/Dec/2014:16:07:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:07:33] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:07:33] ENGINE Bus STARTED
+[03/Dec/2014:16:07:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 314, in servers
+    mem_client = MClient(d_servers, debug=0)
+  File "C:\Users\vbalaud\Documents\memdash\lib\memcache.py", line 193, in __init__
+    self.set_servers(servers)
+  File "C:\Users\vbalaud\Documents\memdash\lib\memcache.py", line 240, in set_servers
+    for s in servers]
+  File "C:\Users\vbalaud\Documents\memdash\lib\memcache.py", line 240, in <listcomp>
+    for s in servers]
+  File "C:\Users\vbalaud\Documents\memdash\lib\memcache.py", line 1079, in __init__
+    raise ValueError('Unable to parse connection string: "%s"' % host)
+ValueError: Unable to parse connection string: "gbmemc01sc.ecollegeqa.net:gbmemc01sc.ecollegeqa.net"
+
+[03/Dec/2014:16:07:58] ENGINE Bus STOPPING
+[03/Dec/2014:16:07:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:07:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:07:58] ENGINE Bus STOPPED
+[03/Dec/2014:16:07:58] ENGINE Bus EXITING
+[03/Dec/2014:16:07:58] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:07:58] ENGINE Bus EXITED
+[03/Dec/2014:16:08:01] ENGINE Bus STARTING
+[03/Dec/2014:16:08:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:08:01] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:08:01] ENGINE Bus STARTED
+[03/Dec/2014:16:08:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:08:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:08:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:08:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:08:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:22] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:22] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:22] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:22] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:22] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:09:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:17] ENGINE Bus STOPPING
+[03/Dec/2014:16:10:17] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:10:17] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:10:17] ENGINE Bus STOPPED
+[03/Dec/2014:16:10:17] ENGINE Bus EXITING
+[03/Dec/2014:16:10:17] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:10:17] ENGINE Bus EXITED
+[03/Dec/2014:16:10:20] ENGINE Bus STARTING
+[03/Dec/2014:16:10:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:10:20] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:10:20] ENGINE Bus STARTED
+[03/Dec/2014:16:10:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:23] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 57, in stats
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 249, in items
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 175, in slabs
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 282, in settings
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:10:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 143, in statst
+    server = self.database.get_server(server)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 91, in get_server
+    con.execute(sql_query, (sid, ))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 198, in execute
+    query = query % args
+TypeError: not all arguments converted during string formatting
+
+[03/Dec/2014:16:11:06] ENGINE Bus STOPPING
+[03/Dec/2014:16:11:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:11:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:11:06] ENGINE Bus STOPPED
+[03/Dec/2014:16:11:06] ENGINE Bus EXITING
+[03/Dec/2014:16:11:06] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:11:06] ENGINE Bus EXITED
+[03/Dec/2014:16:11:08] ENGINE Bus STARTING
+[03/Dec/2014:16:11:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:11:09] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:11:09] ENGINE Bus STARTED
+[03/Dec/2014:16:14:36] ENGINE Bus STOPPING
+[03/Dec/2014:16:14:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:14:36] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:14:36] ENGINE Bus STOPPED
+[03/Dec/2014:16:14:36] ENGINE Bus EXITING
+[03/Dec/2014:16:14:36] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:14:36] ENGINE Bus EXITED
+[03/Dec/2014:16:14:39] ENGINE Bus STARTING
+[03/Dec/2014:16:14:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:14:40] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:14:40] ENGINE Bus STARTED
+[03/Dec/2014:16:15:22] ENGINE Bus STOPPING
+[03/Dec/2014:16:15:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:15:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:15:26] ENGINE Bus STOPPED
+[03/Dec/2014:16:15:26] ENGINE Bus EXITING
+[03/Dec/2014:16:15:26] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:15:26] ENGINE Bus EXITED
+[03/Dec/2014:16:15:29] ENGINE Bus STARTING
+[03/Dec/2014:16:15:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:15:29] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:15:29] ENGINE Bus STARTED
+[03/Dec/2014:16:34:06] ENGINE Bus STOPPING
+[03/Dec/2014:16:34:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:34:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:34:07] ENGINE Bus STOPPED
+[03/Dec/2014:16:34:07] ENGINE Bus EXITING
+[03/Dec/2014:16:34:07] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:34:07] ENGINE Bus EXITED
+[03/Dec/2014:16:34:11] ENGINE Bus STARTING
+[03/Dec/2014:16:34:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:34:12] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:34:12] ENGINE Bus STARTED
+[03/Dec/2014:16:35:10] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\graph.py", line 24, in cmds
+    return self.database.get_cmdgraph()
+TypeError: get_cmdgraph() missing 1 required positional argument: 'sid'
+
+[03/Dec/2014:16:35:10] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\graph.py", line 17, in hits
+    return self.database.get_hitsgraph()
+TypeError: get_hitsgraph() missing 1 required positional argument: 'sid'
+
+[03/Dec/2014:16:35:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\graph.py", line 24, in cmds
+    return self.database.get_cmdgraph(server)
+TypeError: get_cmdgraph() missing 1 required positional argument: 'sid'
+
+[03/Dec/2014:16:35:53] ENGINE Bus STOPPING
+[03/Dec/2014:16:35:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:35:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:35:53] ENGINE Bus STOPPED
+[03/Dec/2014:16:35:53] ENGINE Bus EXITING
+[03/Dec/2014:16:35:53] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:35:53] ENGINE Bus EXITED
+[03/Dec/2014:16:35:56] ENGINE Bus STARTING
+[03/Dec/2014:16:35:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:35:56] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:35:56] ENGINE Bus STARTED
+[03/Dec/2014:16:36:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 48, in first
+    return self.database.get_first()
+TypeError: get_first() missing 1 required positional argument: 'sid'
+
+[03/Dec/2014:16:36:11] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\root.py", line 48, in first
+    return self.database.get_first()
+TypeError: get_first() missing 1 required positional argument: 'sid'
+
+[03/Dec/2014:16:36:51] ENGINE Bus STOPPING
+[03/Dec/2014:16:36:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:36:51] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:36:51] ENGINE Bus STOPPED
+[03/Dec/2014:16:36:51] ENGINE Bus EXITING
+[03/Dec/2014:16:36:51] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:36:51] ENGINE Bus EXITED
+[03/Dec/2014:16:36:54] ENGINE Bus STARTING
+[03/Dec/2014:16:36:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:36:54] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:36:54] ENGINE Bus STARTED
+[03/Dec/2014:16:38:34] ENGINE Bus STOPPING
+[03/Dec/2014:16:38:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:38:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:38:34] ENGINE Bus STOPPED
+[03/Dec/2014:16:38:34] ENGINE Bus EXITING
+[03/Dec/2014:16:38:34] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:38:34] ENGINE Bus EXITED
+[03/Dec/2014:16:38:37] ENGINE Bus STARTING
+[03/Dec/2014:16:38:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:38:37] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:38:37] ENGINE Bus STARTED
+[03/Dec/2014:16:40:45] ENGINE Bus STOPPING
+[03/Dec/2014:16:40:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:16:40:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:16:40:46] ENGINE Bus STOPPED
+[03/Dec/2014:16:40:46] ENGINE Bus EXITING
+[03/Dec/2014:16:40:46] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:16:40:46] ENGINE Bus EXITED
+[03/Dec/2014:16:40:49] ENGINE Bus STARTING
+[03/Dec/2014:16:40:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:16:40:49] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:16:40:49] ENGINE Bus STARTED
+[03/Dec/2014:17:05:24] ENGINE Bus STOPPING
+[03/Dec/2014:17:05:25] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:05:25] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:05:25] ENGINE Bus STOPPED
+[03/Dec/2014:17:05:25] ENGINE Bus EXITING
+[03/Dec/2014:17:05:25] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:05:25] ENGINE Bus EXITED
+[03/Dec/2014:17:05:31] ENGINE Bus STARTING
+[03/Dec/2014:17:05:31] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:05:31] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:05:31] ENGINE Bus STARTED
+[03/Dec/2014:17:13:51] ENGINE Bus STOPPING
+[03/Dec/2014:17:13:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:13:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:13:58] ENGINE Bus STOPPED
+[03/Dec/2014:17:13:58] ENGINE Bus EXITING
+[03/Dec/2014:17:13:58] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:13:58] ENGINE Bus EXITED
+[03/Dec/2014:17:14:01] ENGINE Bus STARTING
+[03/Dec/2014:17:14:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:14:01] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:14:01] ENGINE Bus STARTED
+[03/Dec/2014:17:14:05] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 675, in respond
+    response.finalize()
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 947, in finalize
+    content = self.collapse_body()
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 908, in collapse_body
+    for chunk in self.body:
+  File "C:\Python34\lib\site-packages\cherrypy\_cpcompat.py", line 323, in json_encode
+    for chunk in _json_encode(value):
+  File "C:\Python34\lib\site-packages\simplejson\encoder.py", line 632, in _iterencode
+    for chunk in _iterencode_dict(o, _current_indent_level):
+  File "C:\Python34\lib\site-packages\simplejson\encoder.py", line 591, in _iterencode_dict
+    for chunk in chunks:
+  File "C:\Python34\lib\site-packages\simplejson\encoder.py", line 642, in _iterencode
+    o = _default(o)
+  File "C:\Python34\lib\site-packages\simplejson\encoder.py", line 246, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2014, 12, 3, 17, 14, 4) is not JSON serializable
+
+[03/Dec/2014:17:15:09] ENGINE Bus STOPPING
+[03/Dec/2014:17:15:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:15:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:15:09] ENGINE Bus STOPPED
+[03/Dec/2014:17:15:09] ENGINE Bus EXITING
+[03/Dec/2014:17:15:09] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:15:09] ENGINE Bus EXITED
+[03/Dec/2014:17:15:12] ENGINE Bus STARTING
+[03/Dec/2014:17:15:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:15:12] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:15:12] ENGINE Bus STARTED
+[03/Dec/2014:17:20:16] ENGINE Bus STOPPING
+[03/Dec/2014:17:20:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:20:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:20:16] ENGINE Bus STOPPED
+[03/Dec/2014:17:20:16] ENGINE Bus EXITING
+[03/Dec/2014:17:20:16] ENGINE Bus EXITED
+[03/Dec/2014:17:20:16] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:20:19] ENGINE Bus STARTING
+[03/Dec/2014:17:20:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:20:20] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:20:20] ENGINE Bus STARTED
+[03/Dec/2014:17:25:39] ENGINE Bus STOPPING
+[03/Dec/2014:17:25:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:25:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:25:39] ENGINE Bus STOPPED
+[03/Dec/2014:17:25:39] ENGINE Bus EXITING
+[03/Dec/2014:17:25:39] ENGINE Bus EXITED
+[03/Dec/2014:17:25:39] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:27:41] ENGINE Bus STARTING
+[03/Dec/2014:17:27:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:27:41] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:27:41] ENGINE Bus STARTED
+[03/Dec/2014:17:44:24] ENGINE Bus STOPPING
+[03/Dec/2014:17:44:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:44:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:44:26] ENGINE Bus STOPPED
+[03/Dec/2014:17:44:26] ENGINE Bus EXITING
+[03/Dec/2014:17:44:26] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:44:26] ENGINE Bus EXITED
+[03/Dec/2014:17:44:30] ENGINE Bus STARTING
+[03/Dec/2014:17:44:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:44:30] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:44:30] ENGINE Bus STARTED
+[03/Dec/2014:17:52:53] ENGINE Bus STOPPING
+[03/Dec/2014:17:52:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[03/Dec/2014:17:52:58] ENGINE Stopped thread '_TimeoutMonitor'.
+[03/Dec/2014:17:52:58] ENGINE Bus STOPPED
+[03/Dec/2014:17:52:58] ENGINE Bus EXITING
+[03/Dec/2014:17:52:58] ENGINE Waiting for child threads to terminate...
+[03/Dec/2014:17:52:58] ENGINE Bus EXITED
+[03/Dec/2014:17:53:01] ENGINE Bus STARTING
+[03/Dec/2014:17:53:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[03/Dec/2014:17:53:01] ENGINE Serving on http://0.0.0.0:8989
+[03/Dec/2014:17:53:01] ENGINE Bus STARTED

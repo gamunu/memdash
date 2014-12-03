@@ -1,3 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block body %}
+{% block navigation %}
+    {{ nav }}
+{% endblock %}
 <!-- layout -->
 <div id="layout" class="container-fluid">
     <div class="row">
@@ -64,3 +72,9 @@
        </div> <!-- //col-md12 -->
    </div>
 </div> <!-- //layout -->
+{% include 'help.html' %}
+{% endblock %}
+{% block fscript %}
+    {{ super() }}
+    <script src="static/js/home.min.js"></script>
+{% endblock %}
