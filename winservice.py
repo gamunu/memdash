@@ -5,7 +5,7 @@ Requires Mark Hammond's pywin32 package.
 """
 import os, os.path
 import cherrypy
-from lib import mdatabase, root, admin, graph
+from lib import mdatabase, root, admin, graph, daemon
 import win32serviceutil
 import win32service
 
@@ -72,6 +72,8 @@ class MDashService(win32serviceutil.ServiceFramework):
                 }
             })
 
+        thread1 = daemon.Daemon(database)
+        thread1.start()
         cherrypy.engine.start()
         cherrypy.engine.block()
 

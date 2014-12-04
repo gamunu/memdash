@@ -122,20 +122,25 @@ a a:hover, a:active, a:focus {
 }
 
 .op-blue {
-    background-color: rgba(68, 143, 194, 0.25);
+    background-color: rgba(224, 239, 249, 1);
     border-radius: 0px;
     border: 1px solid rgba(68, 143, 194, 0.33);
     padding: 5px 15px 5px 15px;
 }
 .op-green {
-    background-color: rgba(33, 180, 91, 0.25);
+    background-color: rgba(225, 255, 237, 1);
     border-radius: 0px;
     border: 1px solid rgba(33, 180, 91, 0.38);
     padding: 5px 15px 5px 15px;
 }
 
+.general-stats{
+  background-color: #F5F5F5;
+  padding-bottom: 15px;
+}
+
 .detail-stats {
-    background: rgba(225, 225, 225, 1);
+    background: #F5F5F5;
     border-top: 2px solid #D8D8D8;
     padding-top: 30px;
 }
@@ -180,13 +185,12 @@ a a:hover, a:active, a:focus {
 }
 
 .pace .pace-progress {
-  background-color: #29d;
+  background: #29d;
   position: fixed;
   z-index: 2000;
   top: 0;
   left: 0;
-  height: 12px;
-  overflow: hidden;
+  height: 2px;
 
   -webkit-transition: width 1s;
   -moz-transition: width 1s;
@@ -195,48 +199,62 @@ a a:hover, a:active, a:focus {
 }
 
 .pace .pace-progress-inner {
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: -32px;
-  bottom: 0;
-
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.2)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.75, rgba(255, 255, 255, 0.2)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-  -webkit-background-size: 32px 32px;
-  -moz-background-size: 32px 32px;
-  -o-background-size: 32px 32px;
-  background-size: 32px 32px;
-
-  -webkit-animation: pace-stripe-animation 500ms linear infinite;
-  -moz-animation: pace-stripe-animation 500ms linear infinite;
-  -ms-animation: pace-stripe-animation 500ms linear infinite;
-  -o-animation: pace-stripe-animation 500ms linear infinite;
-  animation: pace-stripe-animation 500ms linear infinite;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -moz-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  -o-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
 }
 
-@-webkit-keyframes pace-stripe-animation {
-  0% { -webkit-transform: none; transform: none; }
-  100% { -webkit-transform: translate(-32px, 0); transform: translate(-32px, 0); }
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
 }
-@-moz-keyframes pace-stripe-animation {
-  0% { -moz-transform: none; transform: none; }
-  100% { -moz-transform: translate(-32px, 0); transform: translate(-32px, 0); }
+
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
-@-o-keyframes pace-stripe-animation {
-  0% { -o-transform: none; transform: none; }
-  100% { -o-transform: translate(-32px, 0); transform: translate(-32px, 0); }
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
 }
-@-ms-keyframes pace-stripe-animation {
-  0% { -ms-transform: none; transform: none; }
-  100% { -ms-transform: translate(-32px, 0); transform: translate(-32px, 0); }
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
 }
-@keyframes pace-stripe-animation {
-  0% { transform: none; transform: none; }
-  100% { transform: translate(-32px, 0); transform: translate(-32px, 0); }
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.progress{
+  border-radius: 0px;  
 }
 
  .stats-title {
@@ -244,7 +262,7 @@ a a:hover, a:active, a:focus {
     padding: 10px;
     border-top: 1px solid rgba(216, 216, 216, 1);
     border-bottom: 1px solid rgba(216, 216, 216, 1);
-    margin-bottom: 40px;
+    font-weight: 500;
  }
 
 .breadcrumb {
@@ -271,4 +289,46 @@ a a:hover, a:active, a:focus {
 
 .timer span{
   font-weight: bold;
+}
+
+/* Charts */
+.chart-wrapper {
+  background: none repeat scroll 0% 0% #DEDEDE;
+  padding: 30px;
+  margin-top: 2px solid #D8D8D8;
+}
+
+.chart-legend ul {
+  list-style: none;
+  width: 100%;
+  margin: 30px auto 0;
+}
+.chart-legend li {
+  text-indent: 16px;
+  line-height: 24px;
+  position: relative;
+  font-weight: 200;
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 0.8em;
+}
+.chart-legend  li:before {
+  display: block;
+  width: 10px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: "";
+}
+.hits:before { background-color: #637b85; }
+.misses:before { background-color: #2c9c69; }
+.get:before { background-color: #CD7617; }
+.set:before { background-color: #F4CB3D; }
+.cached:before { background-color: #1E8DAB }
+
+.stat-label {
+  font-size: 2.5em;
+  display: block;
 }

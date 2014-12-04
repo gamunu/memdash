@@ -1,56 +1,64 @@
 <div class="row">
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Total number of connections opened since the server started running">
-        <div class="well op-orange">
-            <h4><span class="label label-primary pull-right">{{ connections }}</span>Total connections</h4>
+        <div class="op-orange">
+            <span class="stat-label">{{ total_connections }}</span>
+            <span>Total connections</span>
         </div>
     </div>
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Current number of items stored">
-        <div class="well op-teal">
-            <h4><span class="label label-primary pull-right">{{ items }}</span>Current items</h4>
+        <div class="op-teal">
+            <span class="stat-label">{{ items }}</span>
+            <span>Current items</span>
         </div>
     </div>
 
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Number of open connections">
-        <div class="well op-purple">
-            <h4><span class="label label-primary pull-right">{{ curconnections }}</span>Current connections</h4>
+        <div class="op-purple">
+            <span class="stat-label">{{ curconnections }}</span>
+            <span>Current connections</span>
             </div>
     </div>
 
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Number of valid items removed from cache to free memory for new items">
-        <div class="well op-teal">
-            <h4><span class="label label-primary pull-right">{{ evictions }}</span>Evictions</h4>
+        <div class="op-teal">
+            <span class="stat-label">{{ evictions }}</span>
+            <span>Evictions</span>
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Number of successful CAS reqs.">
-        <div class="well op-purple">
-            <h4><span class="label label-primary pull-right">{{ cashits }}</span>CAS hits</h4>
+        <div class="op-purple">
+            <span class="stat-label">{{ cashits }}</span>
+            <span>CAS hits</span>
         </div>
     </div>
 
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Number of CAS reqs against missing keys.">
-        <div class="well op-red">
-            <h4><span class="label label-primary pull-right">{{ casmisses }}</span>CAS missess</h4>
+        <div class="op-red">
+            <span class="stat-label">{{ casmisses }}</span>
+            <span>CAS missess</span>
         </div>
     </div>
     
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Cumulative number of retrieval reqs">
-        <div class="well op-teal">
-            <h4><span class="label label-primary pull-right">{{ get }}</span>Get commands</h4>
+        <div class="op-teal">
+            <span class="stat-label">{{ get }}</span>
+            <span>Get commands</span>
         </div>
     </div>
 
     <div class="col-md-3" rel="tooltip" data-toggle="tooltip" data-placement="top" title="Cumulative number of storage reqs">
-        <div class="well op-orange">
-            <h4><span class="label label-primary pull-right">{{ set }}</span>Set commands</h4>
+        <div class="op-orange">
+            <span class="stat-label">{{ set }}</span>
+            <span>Set commands</span>
         </div>
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-6">
-        <div class="well op-blue">
+        <div class="op-blue">
             <h4>Memory Utilization (<strong>{{ storage_percentage }}%</strong>)</h4>
             <div class="progress progress-sm">
                 <div class="progress-bar {{ storage_color }}" role="progressbar" aria-valuenow="{{ storage_now }}" aria-valuemin="0" aria-valuemax="{{ commands_max }}" style="width:{{ storage_percentage }}%;"></div>
@@ -59,7 +67,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div class="well op-green">
+        <div class="op-green">
             <h4>Hit Ratio (<strong>{{ commands_percentage }}%</strong>)</h4>
             <div class="progress progress-sm">
                 <div class="progress-bar {{ command_color }}" role="progressbar" aria-valuenow="{{ commands_now }}" aria-valuemin="0" aria-valuemax="{{ commands_max }}" style="width:{{ commands_percentage }}%;"></div>

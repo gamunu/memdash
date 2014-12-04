@@ -29,27 +29,38 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="stats-title">localhost:11211</h1>
+                    <h2 class="stats-title">localhost:11211</h2>
                 </div>
             </div>
             
             <!-- general-stats-->
-            <div class="row"><div id="general-stats" class="col-md-12"></div></div>
+            <div class="row"><div class="col-md-12 general-stats"></div></div>
             
             <!-- graph status -->
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 chart-wrapper">
                     <div class="row">
                         <div class="col-md-6">
                             <canvas id="hits-misses"></canvas>
+                            <ul class="chart-legend">
+                                <li class="hits">Hits</li>
+                                <li class="misses">Misses</li>
+                            </ul>
                         </div>
                         <div class="col-md-6">
                             <canvas id="graph-cmds"></canvas>
+                            <ul class="chart-legend">
+                                <li class="get">Get</li>
+                                <li class="set">Set</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <canvas id="graph-cacheditems"></canvas>
+                            <ul class="chart-legend">
+                                <li class="cached">Cached Items</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

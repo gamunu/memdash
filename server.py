@@ -2,7 +2,7 @@
 
 import os, os.path
 import cherrypy
-from lib import mdatabase, root, admin
+from lib import mdatabase, root, admin, graph, daemon
 
 def main():
     '''Main server entre'''
@@ -36,7 +36,11 @@ def main():
 
     page = root.Root(database)
     page.admin = admin.Admin(database)
+    page.graph = graph.Graph(database)
 
+    thread1 = daemon.Daemon(database)
+    thread1.start()
+    
     cherrypy.quickstart(page, '/', conf)
 
 if __name__ == '__main__':
