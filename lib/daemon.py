@@ -66,7 +66,7 @@ class Daemon(object):
         status_loc['cmd_get'] = int(self.stats_current[sid]['cmd_get']) - int(self.stats_old[sid]['cmd_get'])
         status_loc['cmd_set'] = int(self.stats_current[sid]['cmd_set']) - int(self.stats_old[sid]['cmd_set'])
         status_loc['curr_items'] = int(self.stats_current[sid]['curr_items'])
-        status_loc['response_time'] = self.stats_current[sid]['response_time']
+        status_loc['response_time'] = round(self.stats_current[sid]['response_time'], 5)
         status_loc['bytes'] = round(int(self.stats_current[sid]['bytes'])/(1024*1024), 2)
         
         self.stats_new[sid] = status_loc
