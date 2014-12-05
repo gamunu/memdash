@@ -1,46 +1,13 @@
-[04/Dec/2014:17:03:14] ENGINE Bus STARTING
-[04/Dec/2014:17:03:14] ENGINE Started monitor thread '_TimeoutMonitor'.
-[04/Dec/2014:17:03:14] ENGINE Serving on http://0.0.0.0:8989
-[04/Dec/2014:17:03:14] ENGINE Bus STARTED
-[04/Dec/2014:17:04:44] ENGINE Bus STOPPING
-[04/Dec/2014:17:04:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[04/Dec/2014:17:04:44] ENGINE Stopped thread '_TimeoutMonitor'.
-[04/Dec/2014:17:04:44] ENGINE Bus STOPPED
-[04/Dec/2014:17:04:44] ENGINE Bus EXITING
-[04/Dec/2014:17:04:44] ENGINE Bus EXITED
-[04/Dec/2014:17:04:44] ENGINE Waiting for child threads to terminate...
-[04/Dec/2014:17:05:03] ENGINE Bus STARTING
-[04/Dec/2014:17:05:03] ENGINE Started monitor thread '_TimeoutMonitor'.
-[04/Dec/2014:17:05:04] ENGINE Serving on http://0.0.0.0:8989
-[04/Dec/2014:17:05:04] ENGINE Bus STARTED
-[04/Dec/2014:17:06:58] ENGINE Bus STOPPING
-[04/Dec/2014:17:06:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[04/Dec/2014:17:06:59] ENGINE Stopped thread '_TimeoutMonitor'.
-[04/Dec/2014:17:06:59] ENGINE Bus STOPPED
-[04/Dec/2014:17:06:59] ENGINE Bus EXITING
-[04/Dec/2014:17:06:59] ENGINE Waiting for child threads to terminate...
-[04/Dec/2014:17:06:59] ENGINE Bus EXITED
-[04/Dec/2014:17:06:59] ENGINE Waiting for thread Thread-1.
-[04/Dec/2014:17:55:05] ENGINE Bus STARTING
-[04/Dec/2014:17:55:05] ENGINE Started monitor thread '_TimeoutMonitor'.
-[04/Dec/2014:17:55:06] ENGINE Serving on http://0.0.0.0:8989
-[04/Dec/2014:17:55:06] ENGINE Bus STARTED
-[04/Dec/2014:17:56:13] ENGINE Bus STOPPING
-[04/Dec/2014:17:56:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[04/Dec/2014:17:56:13] ENGINE Stopped thread '_TimeoutMonitor'.
-[04/Dec/2014:17:56:13] ENGINE Bus STOPPED
-[04/Dec/2014:17:56:13] ENGINE Bus EXITING
-[04/Dec/2014:17:56:13] ENGINE Bus EXITED
-[04/Dec/2014:17:56:13] ENGINE Waiting for child threads to terminate...
-[04/Dec/2014:17:56:13] ENGINE Waiting for thread Thread-1.
-[04/Dec/2014:17:57:07] ENGINE Bus STARTING
-[04/Dec/2014:17:57:07] ENGINE Started monitor thread '_TimeoutMonitor'.
-[04/Dec/2014:17:57:07] ENGINE Serving on http://0.0.0.0:8989
-[04/Dec/2014:17:57:07] ENGINE Bus STARTED
-[04/Dec/2014:17:57:32] ENGINE Bus STOPPING
-[04/Dec/2014:17:57:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[04/Dec/2014:17:57:40] ENGINE Stopped thread '_TimeoutMonitor'.
-[04/Dec/2014:17:57:40] ENGINE Bus STOPPED
-[04/Dec/2014:17:57:40] ENGINE Bus EXITING
-[04/Dec/2014:17:57:40] ENGINE Waiting for child threads to terminate...
-[04/Dec/2014:17:57:40] ENGINE Bus EXITED
+[05/Dec/2014:12:53:42] ENGINE Bus STARTING
+[05/Dec/2014:12:53:42] ENGINE Started monitor thread 'Monitor'.
+[05/Dec/2014:12:53:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[05/Dec/2014:12:53:42] ENGINE Serving on http://0.0.0.0:8989
+[05/Dec/2014:12:53:42] ENGINE Bus STARTED
+[05/Dec/2014:12:54:21] ENGINE Bus STOPPING
+[05/Dec/2014:12:54:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[05/Dec/2014:12:54:21] ENGINE Stopped thread 'Monitor'.
+[05/Dec/2014:12:54:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[05/Dec/2014:12:54:21] ENGINE Bus STOPPED
+[05/Dec/2014:12:54:21] ENGINE Bus EXITING
+[05/Dec/2014:12:54:21] ENGINE Bus EXITED
+[05/Dec/2014:12:54:21] ENGINE Waiting for child threads to terminate...

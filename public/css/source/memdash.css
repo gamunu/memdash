@@ -327,6 +327,7 @@ a a:hover, a:active, a:focus {
 .get:before { background-color: #CD7617; }
 .set:before { background-color: #F4CB3D; }
 .cached:before { background-color: #1E8DAB }
+.memory:before { background-color: #804801 }
 
 .stat-label {
   font-size: 2.5em;

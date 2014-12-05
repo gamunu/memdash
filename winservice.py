@@ -3,11 +3,14 @@
 MemDash 1.0 Windows service.
 Requires Mark Hammond's pywin32 package.
 """
-import os, os.path
+import os
+import os.path
 import cherrypy
 from lib import mdatabase, root, admin, graph, daemon
 import win32serviceutil
 import win32service
+from cherrypy.process.plugins import Monitor
+
 
 class MDashService(win32serviceutil.ServiceFramework):
     """MemDash NT Service."""
@@ -16,18 +19,18 @@ class MDashService(win32serviceutil.ServiceFramework):
     _svc_display_name_ = "MemDash Service"
 
     def SvcDoRun(self):
-        #Fix file paths,
-        #chage directory to current working
-        #directory
+        # Fix file paths,
+        # chage directory to current working
+        # directory'
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
         conf = {
-            '/' : {
+            '/': {
                 'tools.gzip.mime_types': ['text/*'],
                 'tools.gzip.on': True,
                 'tools.staticdir.root': os.path.abspath(os.getcwd())
             },
-            '/static' : {
+            '/static': {
                 'tools.staticdir.on': True,
                 'tools.gzip.mime_types': ['text/*'],
                 'tools.gzip.on': True,
@@ -40,8 +43,8 @@ class MDashService(win32serviceutil.ServiceFramework):
 
         database = mdatabase.MDatabase('memdash', 'root', 'mariadb')
 
-        #Do not uncomment this will whipe whole database
-        #cherrypy.engine.subscribe('stop', db.cleanup_database)
+        # Do not uncomment this will whipe whole database
+        # cherrypy.engine.subscribe('stop', db.cleanup_database)
 
         page = root.Root(database)
         page.admin = admin.Admin(database)
@@ -55,7 +58,7 @@ class MDashService(win32serviceutil.ServiceFramework):
         # it, as you can't be assured what path your service
         # will run in
         cherrypy.config.update({
-            'global':{
+            'global': {
                 'server.socket_host': '0.0.0.0',
                 'server.socket_port': 8989,
                 'environment': 'embedded',
@@ -64,7 +67,7 @@ class MDashService(win32serviceutil.ServiceFramework):
                 'engine.autoreload.on': False,
                 'engine.SIGHUP': None,
                 'engine.SIGTERM': None,
-                'response.headers.server' : "MemDash v1.0",
+                'response.headers.server': "MemDash v1.0",
                 'tools.sessions.on': False,
                 'tools.caching.on': False,
                 'tools.expires.on': True,
@@ -72,8 +75,9 @@ class MDashService(win32serviceutil.ServiceFramework):
                 }
             })
 
-        thread1 = daemon.Daemon(database)
-        thread1.start()
+        c_daemon = daemon.Daemon(database)
+        Monitor(cherrypy.engine, c_daemon.execute, frequency=300).subscribe()
+        
         cherrypy.engine.start()
         cherrypy.engine.block()
 
