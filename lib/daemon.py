@@ -22,11 +22,11 @@ class Daemon(object):
             if self.fetch(server[0], server[1]):
                 if server[1] in self.stats_old:
                     self.extract_new(server[1])
-                    self.insert_records()
                     self.stats_old[server[1]] = self.stats_current[server[1]]
                 else:
                     self.stats_old[server[1]] = self.stats_current[server[1]]
                     self.fetch(server[0], server[1])
+        self.insert_records()
 
     def fetch(self, server, sid):
         '''Generate html for general status

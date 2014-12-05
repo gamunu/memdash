@@ -11,3 +11,65 @@
 [05/Dec/2014:12:54:21] ENGINE Bus EXITING
 [05/Dec/2014:12:54:21] ENGINE Bus EXITED
 [05/Dec/2014:12:54:21] ENGINE Waiting for child threads to terminate...
+[05/Dec/2014:13:40:15] ENGINE Bus STARTING
+[05/Dec/2014:13:40:15] ENGINE Started monitor thread 'Monitor'.
+[05/Dec/2014:13:40:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[05/Dec/2014:13:40:15] ENGINE Serving on http://0.0.0.0:8989
+[05/Dec/2014:13:40:15] ENGINE Bus STARTED
+[05/Dec/2014:13:50:23] ENGINE Error in background task thread function <bound method Daemon.execute of <lib.daemon.Daemon object at 0x00000000024A4828>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 25, in execute
+    self.insert_records()
+  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 79, in insert_records
+    self.database.insert_statistic(stats, s_stat)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 237, in insert_statistic
+    con.execute(sql_query, (sid, stats['get_hits'], stats['get_misses'], stats['cmd_set'], stats['cmd_get'], stats['curr_items'], stats['response_time'], stats['bytes']))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
+    warn(w[-1], self.Warning, 3)
+  File "C:\Python34\lib\warnings.py", line 15, in showwarning
+    file.write(formatwarning(message, category, filename, lineno, line))
+AttributeError: 'NoneType' object has no attribute 'write'
+
+[05/Dec/2014:14:09:52] ENGINE Bus STOPPING
+[05/Dec/2014:14:09:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[05/Dec/2014:14:09:52] ENGINE Stopped thread '_TimeoutMonitor'.
+[05/Dec/2014:14:09:52] ENGINE Stopped thread 'Monitor'.
+[05/Dec/2014:14:09:52] ENGINE Bus STOPPED
+[05/Dec/2014:14:09:52] ENGINE Bus EXITING
+[05/Dec/2014:14:09:52] ENGINE Waiting for child threads to terminate...
+[05/Dec/2014:14:09:52] ENGINE Bus EXITED
+[05/Dec/2014:14:09:55] ENGINE Bus STARTING
+[05/Dec/2014:14:09:55] ENGINE Started monitor thread 'Monitor'.
+[05/Dec/2014:14:09:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[05/Dec/2014:14:09:56] ENGINE Serving on http://0.0.0.0:8989
+[05/Dec/2014:14:09:56] ENGINE Bus STARTED
+[05/Dec/2014:14:20:02] ENGINE Error in background task thread function <bound method Daemon.execute of <lib.daemon.Daemon object at 0x0000000002729320>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 25, in execute
+    self.insert_records()
+  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 79, in insert_records
+    self.database.insert_statistic(stats, s_stat)
+  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 237, in insert_statistic
+    con.execute(sql_query, (sid, stats['get_hits'], stats['get_misses'], stats['cmd_set'], stats['cmd_get'], stats['curr_items'], stats['response_time'], stats['bytes']))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
+    warn(w[-1], self.Warning, 3)
+  File "C:\Python34\lib\warnings.py", line 15, in showwarning
+    file.write(formatwarning(message, category, filename, lineno, line))
+AttributeError: 'NoneType' object has no attribute 'write'
+
+[05/Dec/2014:15:14:48] ENGINE Bus STOPPING
+[05/Dec/2014:15:14:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[05/Dec/2014:15:14:55] ENGINE Stopped thread '_TimeoutMonitor'.
+[05/Dec/2014:15:14:55] ENGINE Stopped thread 'Monitor'.
+[05/Dec/2014:15:14:55] ENGINE Bus STOPPED
+[05/Dec/2014:15:14:55] ENGINE Bus EXITING
+[05/Dec/2014:15:14:55] ENGINE Waiting for child threads to terminate...
+[05/Dec/2014:15:14:55] ENGINE Bus EXITED
