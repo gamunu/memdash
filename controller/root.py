@@ -3,10 +3,12 @@
     and root pages'''
 
 import cherrypy
-from lib.html import Html
-from lib.memcache import Client as MClient
+import html
 from datetime import datetime
 import re
+from model import root
+from controller.html import Html
+from controller.memcache import Client as MClient
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -14,8 +16,7 @@ class Root(object):
     '''Funtions for handling rest requests
     and root pages'''
 
-    def __init__(self, db):
-        self.database = db
+    def __init__(self):
         self.env = Environment(loader=FileSystemLoader('views'))
 
     @cherrypy.expose
@@ -50,7 +51,7 @@ class Root(object):
         the database
         @return: json string
         @rtype: dic'''
-        return self.database.get_first()
+        return root.Root.get_first()
 
     @cherrypy.expose
     def stats(self, server):
@@ -59,19 +60,12 @@ class Root(object):
         @rtype: dic'''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
 
         if server.strip():
-            mem_client = MClient([server], debug=0)
-
-            while True:
-                try:
-                    stats = mem_client.get_stats()
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
+            mem_client = MClient([server])
+            stats = mem_client.get_stats()
+            mem_client.disconnect_all()
 
         output_html = []
 
@@ -146,20 +140,12 @@ class Root(object):
         @rtype: str'''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
 
         if server.strip():
-            mem_client = MClient([server], debug=0)
-
-            while True:
-                try:
-                    print('statst_excpetion')
-                    stats = mem_client.get_stats()
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
+            mem_client = MClient([server])
+            stats = mem_client.get_stats()
+            mem_client.disconnect_all()
 
         t_rows = []
 
@@ -178,21 +164,14 @@ class Root(object):
         @rtype: str'''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
 
         if server.strip():
-            mem_client = MClient([server], debug=0)
+            mem_client = MClient([server])
 
             # get slabs stats
-            while True:
-                try:
-                    print('slabs_excpetion')
-                    stats = mem_client.get_stats(stat_args="slabs")
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
+            stats = mem_client.get_stats(stat_args="slabs")
+            mem_client.disconnect_all()
 
         t_rows = []
 
@@ -217,21 +196,14 @@ class Root(object):
         '''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
 
         if server.strip():
-            mem_client = MClient([server], debug=0)
+            mem_client = MClient([server])
 
             # get all item stats
-            while True:
-                try:
-                    print('sizes_excpetion')
-                    stats = mem_client.get_stats(stat_args="sizes")
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
+            stats = mem_client.get_stats(stat_args="sizes")
+            mem_client.disconnect_all()
 
         t_rows = []
 
@@ -250,20 +222,13 @@ class Root(object):
         @rtype: str'''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
         if server.strip():
-            mem_client = MClient([server], debug=0)
+            mem_client = MClient([server])
 
             # get all items stats
-            while True:
-                try:
-                    print('items_excpetion')
-                    stats = mem_client.get_stats(stat_args="items")
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
+            stats = mem_client.get_stats(stat_args="items")
+            mem_client.disconnect_all()
 
         t_rows = []
 
@@ -282,21 +247,14 @@ class Root(object):
         @rtype: str'''
 
         stats = []
-        server = self.database.get_server(server)
+        server = root.Root.get_server(server)
         if server.strip():
-            mem_client = MClient([server], debug=0)
+            mem_client = MClient([server])
 
             # get all details of settings
-            while True:
-                try:
-                    print('print_excpetion')
-                    stats = mem_client.get_stats(stat_args="settings")
-                    mem_client.disconnect_all()
-                except Exception:
-                    mem_client = MClient([server], debug=0)
-                    continue
-                break
-
+            stats = mem_client.get_stats(stat_args="settings")
+            mem_client.disconnect_all()
+            
         t_rows = []
 
         if len(stats) > 0:
@@ -312,9 +270,9 @@ class Root(object):
         @rtype: str'''
 
         # get list of servers from sqlite database
-        d_servers = self.database.get_servers_weight()
+        d_servers = root.Root.get_servers_weight()
 
-        mem_client = MClient(d_servers, debug=0)
+        mem_client = MClient(d_servers)
         s_stats = mem_client.get_stats()
         mem_client.disconnect_all()
 
@@ -328,7 +286,7 @@ class Root(object):
 
         stats_html = self.env.get_template('detail/sidebar.html')
         render_data = {'online_servers': online_servers,
-                       'servers': self.database.get_servers()}
+                       'servers': root.Root.get_servers()}
         return stats_html.render(render_data)
 
     @cherrypy.expose
@@ -338,9 +296,9 @@ class Root(object):
         @return: html table
         @rtype: str'''
 
-        s_servers = self.database.get_servers_weight()
+        s_servers = root.Root.get_servers_weight()
 
-        mem_client = MClient(s_servers, debug=0)
+        mem_client = MClient(s_servers)
         s_stats = mem_client.get_stats()
         mem_client.disconnect_all()
 
@@ -414,10 +372,10 @@ class Root(object):
 
         s_stats = []
 
-        s_servers = self.database.get_servers_weight()
+        s_servers = root.Root.get_servers_weight()
 
         if s_servers:
-            mem_client = MClient(s_servers, debug=0)
+            mem_client = MClient(s_servers)
             s_stats = mem_client.get_stats()
             mem_client.disconnect_all()
 

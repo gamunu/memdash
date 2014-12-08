@@ -1,75 +1,173 @@
-[05/Dec/2014:12:53:42] ENGINE Bus STARTING
-[05/Dec/2014:12:53:42] ENGINE Started monitor thread 'Monitor'.
-[05/Dec/2014:12:53:42] ENGINE Started monitor thread '_TimeoutMonitor'.
-[05/Dec/2014:12:53:42] ENGINE Serving on http://0.0.0.0:8989
-[05/Dec/2014:12:53:42] ENGINE Bus STARTED
-[05/Dec/2014:12:54:21] ENGINE Bus STOPPING
-[05/Dec/2014:12:54:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[05/Dec/2014:12:54:21] ENGINE Stopped thread 'Monitor'.
-[05/Dec/2014:12:54:21] ENGINE Stopped thread '_TimeoutMonitor'.
-[05/Dec/2014:12:54:21] ENGINE Bus STOPPED
-[05/Dec/2014:12:54:21] ENGINE Bus EXITING
-[05/Dec/2014:12:54:21] ENGINE Bus EXITED
-[05/Dec/2014:12:54:21] ENGINE Waiting for child threads to terminate...
-[05/Dec/2014:13:40:15] ENGINE Bus STARTING
-[05/Dec/2014:13:40:15] ENGINE Started monitor thread 'Monitor'.
-[05/Dec/2014:13:40:15] ENGINE Started monitor thread '_TimeoutMonitor'.
-[05/Dec/2014:13:40:15] ENGINE Serving on http://0.0.0.0:8989
-[05/Dec/2014:13:40:15] ENGINE Bus STARTED
-[05/Dec/2014:13:50:23] ENGINE Error in background task thread function <bound method Daemon.execute of <lib.daemon.Daemon object at 0x00000000024A4828>>.
+[08/Dec/2014:15:48:01] ENGINE Bus STARTING
+[08/Dec/2014:15:48:01] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:15:48:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:15:48:01] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:15:48:01] ENGINE Bus STARTED
+[08/Dec/2014:15:53:01] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002815D68>>.
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
     self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 25, in execute
-    self.insert_records()
-  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 79, in insert_records
-    self.database.insert_statistic(stats, s_stat)
-  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 237, in insert_statistic
-    con.execute(sql_query, (sid, stats['get_hits'], stats['get_misses'], stats['cmd_set'], stats['cmd_get'], stats['curr_items'], stats['response_time'], stats['bytes']))
-  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
-    if not self._defer_warnings: self._warning_check()
-  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
-    warn(w[-1], self.Warning, 3)
-  File "C:\Python34\lib\warnings.py", line 15, in showwarning
-    file.write(formatwarning(message, category, filename, lineno, line))
-AttributeError: 'NoneType' object has no attribute 'write'
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
 
-[05/Dec/2014:14:09:52] ENGINE Bus STOPPING
-[05/Dec/2014:14:09:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[05/Dec/2014:14:09:52] ENGINE Stopped thread '_TimeoutMonitor'.
-[05/Dec/2014:14:09:52] ENGINE Stopped thread 'Monitor'.
-[05/Dec/2014:14:09:52] ENGINE Bus STOPPED
-[05/Dec/2014:14:09:52] ENGINE Bus EXITING
-[05/Dec/2014:14:09:52] ENGINE Waiting for child threads to terminate...
-[05/Dec/2014:14:09:52] ENGINE Bus EXITED
-[05/Dec/2014:14:09:55] ENGINE Bus STARTING
-[05/Dec/2014:14:09:55] ENGINE Started monitor thread 'Monitor'.
-[05/Dec/2014:14:09:55] ENGINE Started monitor thread '_TimeoutMonitor'.
-[05/Dec/2014:14:09:56] ENGINE Serving on http://0.0.0.0:8989
-[05/Dec/2014:14:09:56] ENGINE Bus STARTED
-[05/Dec/2014:14:20:02] ENGINE Error in background task thread function <bound method Daemon.execute of <lib.daemon.Daemon object at 0x0000000002729320>>.
+[08/Dec/2014:15:54:16] ENGINE Bus STOPPING
+[08/Dec/2014:15:54:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:15:54:16] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:15:54:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:15:54:16] ENGINE Bus STOPPED
+[08/Dec/2014:15:54:16] ENGINE Bus EXITING
+[08/Dec/2014:15:54:16] ENGINE Bus EXITED
+[08/Dec/2014:15:54:16] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:15:54:20] ENGINE Bus STARTING
+[08/Dec/2014:15:54:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:15:54:20] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:15:54:20] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:15:54:20] ENGINE Bus STARTED
+[08/Dec/2014:15:59:20] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002FF5B70>>.
 Traceback (most recent call last):
   File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
     self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 25, in execute
-    self.insert_records()
-  File "C:\Users\vbalaud\Documents\memdash\lib\daemon.py", line 79, in insert_records
-    self.database.insert_statistic(stats, s_stat)
-  File "C:\Users\vbalaud\Documents\memdash\lib\mdatabase.py", line 237, in insert_statistic
-    con.execute(sql_query, (sid, stats['get_hits'], stats['get_misses'], stats['cmd_set'], stats['cmd_get'], stats['curr_items'], stats['response_time'], stats['bytes']))
-  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
-    if not self._defer_warnings: self._warning_check()
-  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
-    warn(w[-1], self.Warning, 3)
-  File "C:\Python34\lib\warnings.py", line 15, in showwarning
-    file.write(formatwarning(message, category, filename, lineno, line))
-AttributeError: 'NoneType' object has no attribute 'write'
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
 
-[05/Dec/2014:15:14:48] ENGINE Bus STOPPING
-[05/Dec/2014:15:14:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[05/Dec/2014:15:14:55] ENGINE Stopped thread '_TimeoutMonitor'.
-[05/Dec/2014:15:14:55] ENGINE Stopped thread 'Monitor'.
-[05/Dec/2014:15:14:55] ENGINE Bus STOPPED
-[05/Dec/2014:15:14:55] ENGINE Bus EXITING
-[05/Dec/2014:15:14:55] ENGINE Waiting for child threads to terminate...
-[05/Dec/2014:15:14:55] ENGINE Bus EXITED
+[08/Dec/2014:16:18:46] ENGINE Bus STOPPING
+[08/Dec/2014:16:18:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:18:46] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:18:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:18:46] ENGINE Bus STOPPED
+[08/Dec/2014:16:18:46] ENGINE Bus EXITING
+[08/Dec/2014:16:18:46] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:18:46] ENGINE Bus EXITED
+[08/Dec/2014:16:18:50] ENGINE Bus STARTING
+[08/Dec/2014:16:18:50] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:18:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:18:50] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:18:50] ENGINE Bus STARTED
+[08/Dec/2014:16:20:14] ENGINE Bus STOPPING
+[08/Dec/2014:16:20:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:20:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:20:14] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:20:14] ENGINE Bus STOPPED
+[08/Dec/2014:16:20:14] ENGINE Bus EXITING
+[08/Dec/2014:16:20:14] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:20:14] ENGINE Bus EXITED
+[08/Dec/2014:16:20:21] ENGINE Bus STARTING
+[08/Dec/2014:16:20:21] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:20:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:20:21] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:20:21] ENGINE Bus STARTED
+[08/Dec/2014:16:25:21] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x00000000026F92B0>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+
+[08/Dec/2014:16:32:04] ENGINE Bus STOPPING
+[08/Dec/2014:16:32:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:32:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:32:04] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:32:04] ENGINE Bus STOPPED
+[08/Dec/2014:16:32:04] ENGINE Bus EXITING
+[08/Dec/2014:16:32:04] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:32:04] ENGINE Bus EXITED
+[08/Dec/2014:16:32:08] ENGINE Bus STARTING
+[08/Dec/2014:16:32:08] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:32:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:32:08] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:32:08] ENGINE Bus STARTED
+[08/Dec/2014:16:37:08] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000003026CC0>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+
+[08/Dec/2014:16:39:29] ENGINE Bus STOPPING
+[08/Dec/2014:16:39:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:39:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:39:29] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:39:29] ENGINE Bus STOPPED
+[08/Dec/2014:16:39:29] ENGINE Bus EXITING
+[08/Dec/2014:16:39:29] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:39:29] ENGINE Bus EXITED
+[08/Dec/2014:16:39:32] ENGINE Bus STARTING
+[08/Dec/2014:16:39:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:39:32] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:39:32] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:39:32] ENGINE Bus STARTED
+[08/Dec/2014:16:40:02] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x000000000287D438>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+
+[08/Dec/2014:16:43:46] ENGINE Bus STOPPING
+[08/Dec/2014:16:43:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:43:46] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:43:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:43:46] ENGINE Bus STOPPED
+[08/Dec/2014:16:43:46] ENGINE Bus EXITING
+[08/Dec/2014:16:43:46] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:43:46] ENGINE Bus EXITED
+[08/Dec/2014:16:43:50] ENGINE Bus STARTING
+[08/Dec/2014:16:43:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:43:50] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:43:50] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:43:50] ENGINE Bus STARTED
+[08/Dec/2014:16:44:20] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002837EF0>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+
+[08/Dec/2014:16:44:38] ENGINE Bus STOPPING
+[08/Dec/2014:16:44:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:44:39] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:44:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:44:39] ENGINE Bus STOPPED
+[08/Dec/2014:16:44:39] ENGINE Bus EXITING
+[08/Dec/2014:16:44:39] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:44:39] ENGINE Bus EXITED
+[08/Dec/2014:16:44:43] ENGINE Bus STARTING
+[08/Dec/2014:16:44:43] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:44:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:44:43] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:44:43] ENGINE Bus STARTED
+[08/Dec/2014:16:45:13] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002837DA0>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+
+[08/Dec/2014:16:45:27] ENGINE Bus STOPPING
+[08/Dec/2014:16:45:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[08/Dec/2014:16:45:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[08/Dec/2014:16:45:27] ENGINE Stopped thread 'Monitor'.
+[08/Dec/2014:16:45:27] ENGINE Bus STOPPED
+[08/Dec/2014:16:45:27] ENGINE Bus EXITING
+[08/Dec/2014:16:45:27] ENGINE Waiting for child threads to terminate...
+[08/Dec/2014:16:45:27] ENGINE Bus EXITED
+[08/Dec/2014:16:45:31] ENGINE Bus STARTING
+[08/Dec/2014:16:45:31] ENGINE Started monitor thread 'Monitor'.
+[08/Dec/2014:16:45:31] ENGINE Started monitor thread '_TimeoutMonitor'.
+[08/Dec/2014:16:45:31] ENGINE Serving on http://0.0.0.0:8989
+[08/Dec/2014:16:45:31] ENGINE Bus STARTED
+[08/Dec/2014:16:46:01] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002877E10>>.
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
+    self.function(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
+    for server in MDatabase.get_servers():
+AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+

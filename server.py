@@ -3,7 +3,7 @@
 import os
 import os.path
 import cherrypy
-from lib import mdatabase, root, admin, graph, daemon
+from controller import root, admin, graph, daemon
 from cherrypy.process.plugins import Monitor
 
 
@@ -31,17 +31,14 @@ def main():
             'tools.staticdir.dir': './public'
         }
     }
-
-    database = mdatabase.MDatabase('memdash', 'root', 'mariadb')
-
+    
     # Do not uncomment this will whipe whole database
     # cherrypy.engine.subscribe('stop', db.cleanup_database)
 
-    page = root.Root(database)
-    page.admin = admin.Admin(database)
-    page.graph = graph.Graph(database)
-
-    c_daemon = daemon.Daemon(database)
+    page = root.Root()
+    page.admin = admin.Admin()
+    page.graph = graph.Graph()
+    c_daemon = daemon.Daemon()
     Monitor(cherrypy.engine, c_daemon.execute, frequency=30).subscribe()
 
     cherrypy.quickstart(page, '/', conf)

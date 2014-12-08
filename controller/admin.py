@@ -2,17 +2,15 @@
 '''Admin interface functions'''
 
 import cherrypy
-from lib import html
+from controller.html import Html
+from model import admin
 from jinja2 import Environment, FileSystemLoader
 env = Environment(loader=FileSystemLoader('views'))
 
 
 class Admin(object):
     '''Admin interface functions'''
-
-    def __init__(self, db):
-        self.database = db
-
+    
     @staticmethod
     @cherrypy.expose
     def index():
@@ -23,7 +21,7 @@ class Admin(object):
         output_html = []
 
         index_html = env.get_template('admin.html')
-        nav = html.Html.get_navigation('admin')
+        nav = Html.get_navigation('admin')
         return index_html.render({'title': "Admin", 'nav': nav})
 
     @cherrypy.expose
@@ -34,7 +32,7 @@ class Admin(object):
         @rtype: str'''
         output_html = []
         html_template = env.get_template('admin/table_row.html')
-        for server in self.database.get_server_list():
+        for server in admin.Admin.get_server_list():
             output_html.append(html_template.render({'server': server}))
 
         return ''.join(output_html)
@@ -48,7 +46,7 @@ class Admin(object):
         @rtype: str'''
         sid = 0
         if len(name) > 3 and port.isnumeric():
-            sid = self.database.insert_server(name, port)
+            sid = admin.Admin.insert_server(name, port)
         return {'id':  sid}
 
     @cherrypy.expose
@@ -60,7 +58,7 @@ class Admin(object):
         @rtype: str'''
         s_delete = False
         if sid.isnumeric() and int(sid) > 0:
-            s_delete = self.database.delete_server(sid)
+            s_delete = admin.Admin.delete_server(sid)
         return {'msg': s_delete}
 
     @cherrypy.expose
@@ -72,6 +70,6 @@ class Admin(object):
         @rtype: str'''
         s_update = False
         if sid.isnumeric() and int(sid) > 0:
-            s_update = self.database.update_server(name, port, sid)
+            s_update = admin.Admin.update_server(name, port, sid)
 
         return {'msg': s_update}

@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 '''Background Daemon fetch data'''
 
-from lib.memcache import Client as MClient
+import controller
 from timeit import Timer
+from model.mdatabase import MDatabase
 import time
 
 
 class Daemon(object):
 
-    def __init__(self, db):
+    def __init__(self):
         ''' Constructor. '''
-        self.database = db
+
         self.stats_current = {}
         self.stats_old = {}
         self.stats_new = {}
 
     def execute(self):
         ''' Run in the background '''
-        for server in self.database.get_servers():
+        for server in MDatabase.get_servers():
             print(server)
             if self.fetch(server[0], server[1]):
                 if server[1] in self.stats_old:
@@ -35,20 +36,14 @@ class Daemon(object):
 
         print("fetching from {} {}".format(server, sid))
         stats = []
-        mem_client = MClient([server], debug=0)
+        mem_client = MClient([server])
 
         time_elapsed = 0
         timer = Timer(mem_client.get_stats)
-        while True:
-            try:
-                stats = mem_client.get_stats()
-                #Messure the response time
-                time_elapsed = timer.timeit(1)
-                mem_client.forget_dead_hosts()
-            except Exception:
-                mem_client = MClient([server], debug=0)
-                continue
-            break
+        
+        stats = mem_client.get_stats()
+        #Messure the response time
+        time_elapsed = timer.timeit(1)
 
         if len(stats) > 0:
             stats = stats[0][1]
@@ -76,4 +71,4 @@ class Daemon(object):
 
         for stats in self.stats_new:
             s_stat = self.stats_new[stats]
-            self.database.insert_statistic(stats, s_stat)
+            MDatabase.insert_statistic(stats, s_stat)

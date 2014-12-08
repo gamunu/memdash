@@ -6,7 +6,8 @@ Requires Mark Hammond's pywin32 package.
 import os
 import os.path
 import cherrypy
-from lib import mdatabase, root, admin, graph, daemon
+from controller import root, admin, graph, daemon
+from config import Config
 import win32serviceutil
 import win32service
 from cherrypy.process.plugins import Monitor
@@ -41,14 +42,12 @@ class MDashService(win32serviceutil.ServiceFramework):
             }
         }
 
-        database = mdatabase.MDatabase('memdash', 'root', 'mariadb')
-
         # Do not uncomment this will whipe whole database
         # cherrypy.engine.subscribe('stop', db.cleanup_database)
 
-        page = root.Root(database)
-        page.admin = admin.Admin(database)
-        page.graph = graph.Graph(database)
+        page = root.Root()
+        page.admin = admin.Admin()
+        page.graph = graph.Graph()
 
         cherrypy.tree.mount(page, '/', conf)
 
@@ -75,8 +74,8 @@ class MDashService(win32serviceutil.ServiceFramework):
                 }
             })
 
-        c_daemon = daemon.Daemon(database)
-        Monitor(cherrypy.engine, c_daemon.execute, frequency=300).subscribe()
+        c_daemon = daemon.Daemon()
+        Monitor(cherrypy.engine, c_daemon.execute, frequency=Config.DE_FREQUENCY).subscribe()
         
         cherrypy.engine.start()
         cherrypy.engine.block()
