@@ -1,173 +1,2360 @@
-[08/Dec/2014:15:48:01] ENGINE Bus STARTING
-[08/Dec/2014:15:48:01] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:15:48:01] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:15:48:01] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:15:48:01] ENGINE Bus STARTED
-[08/Dec/2014:15:53:01] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002815D68>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[09/Dec/2014:14:39:24] ENGINE Bus STARTING
+[09/Dec/2014:14:39:24] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:14:39:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:14:39:24] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:14:39:24] ENGINE Bus STARTED
+[09/Dec/2014:14:53:10] ENGINE Bus STOPPING
+[09/Dec/2014:14:53:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:14:53:10] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:14:53:10] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:14:53:10] ENGINE Bus STOPPED
+[09/Dec/2014:14:53:10] ENGINE Bus EXITING
+[09/Dec/2014:14:53:10] ENGINE Bus EXITED
+[09/Dec/2014:14:53:10] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:14:53:13] ENGINE Bus STARTING
+[09/Dec/2014:14:53:13] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:14:53:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:14:53:14] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:14:53:14] ENGINE Bus STARTED
+[09/Dec/2014:15:04:45] ENGINE Bus STOPPING
+[09/Dec/2014:15:04:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:04:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:04:45] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:04:45] ENGINE Bus STOPPED
+[09/Dec/2014:15:04:45] ENGINE Bus EXITING
+[09/Dec/2014:15:04:45] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:04:45] ENGINE Bus EXITED
+[09/Dec/2014:15:04:49] ENGINE Bus STARTING
+[09/Dec/2014:15:04:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:04:49] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:04:49] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:04:49] ENGINE Bus STARTED
+[09/Dec/2014:15:10:54] ENGINE Bus STOPPING
+[09/Dec/2014:15:10:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:10:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:10:54] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:10:54] ENGINE Bus STOPPED
+[09/Dec/2014:15:10:54] ENGINE Bus EXITING
+[09/Dec/2014:15:10:54] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:10:54] ENGINE Bus EXITED
+[09/Dec/2014:15:10:57] ENGINE Bus STARTING
+[09/Dec/2014:15:10:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:10:57] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:10:57] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:10:57] ENGINE Bus STARTED
+[09/Dec/2014:15:11:26] ENGINE Bus STOPPING
+[09/Dec/2014:15:11:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:11:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:11:26] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:11:26] ENGINE Bus STOPPED
+[09/Dec/2014:15:11:26] ENGINE Bus EXITING
+[09/Dec/2014:15:11:26] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:11:26] ENGINE Bus EXITED
+[09/Dec/2014:15:11:30] ENGINE Bus STARTING
+[09/Dec/2014:15:11:30] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:11:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:11:30] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:11:30] ENGINE Bus STARTED
+[09/Dec/2014:15:14:39] ENGINE Bus STOPPING
+[09/Dec/2014:15:14:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:14:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:14:39] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:14:39] ENGINE Bus STOPPED
+[09/Dec/2014:15:14:39] ENGINE Bus EXITING
+[09/Dec/2014:15:14:39] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:14:39] ENGINE Bus EXITED
+[09/Dec/2014:15:14:42] ENGINE Bus STARTING
+[09/Dec/2014:15:14:42] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:14:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:14:42] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:14:42] ENGINE Bus STARTED
+[09/Dec/2014:15:16:36] ENGINE Bus STOPPING
+[09/Dec/2014:15:16:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:16:41] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:16:41] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:16:41] ENGINE Bus STOPPED
+[09/Dec/2014:15:16:41] ENGINE Bus EXITING
+[09/Dec/2014:15:16:41] ENGINE Bus EXITED
+[09/Dec/2014:15:16:41] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:16:51] ENGINE Bus STARTING
+[09/Dec/2014:15:16:51] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:16:51] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:16:51] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:16:51] ENGINE Bus STARTED
+[09/Dec/2014:15:16:54] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 65, in ovmemory
+    return graph.Graph.overall_memory()
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 240, in overall_memory
+    datasets.append({'data' : getcmd,
+NameError: name 'getcmd' is not defined
 
-[08/Dec/2014:15:54:16] ENGINE Bus STOPPING
-[08/Dec/2014:15:54:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:15:54:16] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:15:54:16] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:15:54:16] ENGINE Bus STOPPED
-[08/Dec/2014:15:54:16] ENGINE Bus EXITING
-[08/Dec/2014:15:54:16] ENGINE Bus EXITED
-[08/Dec/2014:15:54:16] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:15:54:20] ENGINE Bus STARTING
-[08/Dec/2014:15:54:20] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:15:54:20] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:15:54:20] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:15:54:20] ENGINE Bus STARTED
-[08/Dec/2014:15:59:20] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002FF5B70>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[09/Dec/2014:15:17:09] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 65, in ovmemory
+    return graph.Graph.overall_memory()
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 240, in overall_memory
+    datasets.append({'data' : getcmd,
+NameError: name 'getcmd' is not defined
 
-[08/Dec/2014:16:18:46] ENGINE Bus STOPPING
-[08/Dec/2014:16:18:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:18:46] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:18:46] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:18:46] ENGINE Bus STOPPED
-[08/Dec/2014:16:18:46] ENGINE Bus EXITING
-[08/Dec/2014:16:18:46] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:18:46] ENGINE Bus EXITED
-[08/Dec/2014:16:18:50] ENGINE Bus STARTING
-[08/Dec/2014:16:18:50] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:18:50] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:18:50] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:18:50] ENGINE Bus STARTED
-[08/Dec/2014:16:20:14] ENGINE Bus STOPPING
-[08/Dec/2014:16:20:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:20:14] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:20:14] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:20:14] ENGINE Bus STOPPED
-[08/Dec/2014:16:20:14] ENGINE Bus EXITING
-[08/Dec/2014:16:20:14] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:20:14] ENGINE Bus EXITED
-[08/Dec/2014:16:20:21] ENGINE Bus STARTING
-[08/Dec/2014:16:20:21] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:20:21] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:20:21] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:20:21] ENGINE Bus STARTED
-[08/Dec/2014:16:25:21] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x00000000026F92B0>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[09/Dec/2014:15:19:17] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 65, in ovmemory
+    return graph.Graph.overall_memory()
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 240, in overall_memory
+    memory = []
+NameError: name 'getcmd' is not defined
 
-[08/Dec/2014:16:32:04] ENGINE Bus STOPPING
-[08/Dec/2014:16:32:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:32:04] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:32:04] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:32:04] ENGINE Bus STOPPED
-[08/Dec/2014:16:32:04] ENGINE Bus EXITING
-[08/Dec/2014:16:32:04] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:32:04] ENGINE Bus EXITED
-[08/Dec/2014:16:32:08] ENGINE Bus STARTING
-[08/Dec/2014:16:32:08] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:32:08] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:32:08] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:32:08] ENGINE Bus STARTED
-[08/Dec/2014:16:37:08] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000003026CC0>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[09/Dec/2014:15:19:39] ENGINE Bus STOPPING
+[09/Dec/2014:15:19:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:19:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:19:39] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:19:39] ENGINE Bus STOPPED
+[09/Dec/2014:15:19:39] ENGINE Bus EXITING
+[09/Dec/2014:15:19:39] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:19:39] ENGINE Bus EXITED
+[09/Dec/2014:15:19:42] ENGINE Bus STARTING
+[09/Dec/2014:15:19:42] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:19:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:19:42] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:19:42] ENGINE Bus STARTED
+[09/Dec/2014:15:20:18] ENGINE Bus STOPPING
+[09/Dec/2014:15:20:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:20:18] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:20:18] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:20:18] ENGINE Bus STOPPED
+[09/Dec/2014:15:20:18] ENGINE Bus EXITING
+[09/Dec/2014:15:20:18] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:20:18] ENGINE Bus EXITED
+[09/Dec/2014:15:20:21] ENGINE Bus STARTING
+[09/Dec/2014:15:20:21] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:20:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:20:22] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:20:22] ENGINE Bus STARTED
+[09/Dec/2014:15:23:20] ENGINE Bus STOPPING
+[09/Dec/2014:15:23:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:23:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:23:20] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:23:20] ENGINE Bus STOPPED
+[09/Dec/2014:15:23:20] ENGINE Bus EXITING
+[09/Dec/2014:15:23:20] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:23:20] ENGINE Bus EXITED
+[09/Dec/2014:15:23:24] ENGINE Bus STARTING
+[09/Dec/2014:15:23:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:23:24] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:23:24] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:23:24] ENGINE Bus STARTED
+[09/Dec/2014:15:36:55] ENGINE Bus STOPPING
+[09/Dec/2014:15:36:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:36:56] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:36:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:36:56] ENGINE Bus STOPPED
+[09/Dec/2014:15:36:56] ENGINE Bus EXITING
+[09/Dec/2014:15:36:56] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:36:56] ENGINE Bus EXITED
+[09/Dec/2014:15:36:59] ENGINE Bus STARTING
+[09/Dec/2014:15:36:59] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:36:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:36:59] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:36:59] ENGINE Bus STARTED
+[09/Dec/2014:15:56:31] ENGINE Bus STOPPING
+[09/Dec/2014:15:56:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:15:56:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:15:56:31] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:15:56:31] ENGINE Bus STOPPED
+[09/Dec/2014:15:56:31] ENGINE Bus EXITING
+[09/Dec/2014:15:56:31] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:15:56:31] ENGINE Bus EXITED
+[09/Dec/2014:15:56:56] ENGINE Bus STARTING
+[09/Dec/2014:15:56:56] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:15:56:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:15:56:56] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:15:56:56] ENGINE Bus STARTED
+[09/Dec/2014:16:28:35] ENGINE Bus STOPPING
+[09/Dec/2014:16:28:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:16:28:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:16:28:35] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:16:28:35] ENGINE Bus STOPPED
+[09/Dec/2014:16:28:35] ENGINE Bus EXITING
+[09/Dec/2014:16:28:35] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:16:28:35] ENGINE Bus EXITED
+[09/Dec/2014:16:28:38] ENGINE Bus STARTING
+[09/Dec/2014:16:28:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:16:28:38] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:16:28:39] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:16:28:39] ENGINE Bus STARTED
+[09/Dec/2014:16:29:05] ENGINE Bus STOPPING
+[09/Dec/2014:16:29:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:16:29:05] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:16:29:05] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:16:29:05] ENGINE Bus STOPPED
+[09/Dec/2014:16:29:05] ENGINE Bus EXITING
+[09/Dec/2014:16:29:05] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:16:29:05] ENGINE Bus EXITED
+[09/Dec/2014:16:29:09] ENGINE Bus STARTING
+[09/Dec/2014:16:29:09] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:16:29:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:16:29:09] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:16:29:09] ENGINE Bus STARTED
+[09/Dec/2014:16:32:23] ENGINE Bus STOPPING
+[09/Dec/2014:16:32:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:16:32:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:16:32:23] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:16:32:23] ENGINE Bus STOPPED
+[09/Dec/2014:16:32:23] ENGINE Bus EXITING
+[09/Dec/2014:16:32:23] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:16:32:23] ENGINE Bus EXITED
+[09/Dec/2014:16:32:26] ENGINE Bus STARTING
+[09/Dec/2014:16:32:26] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:16:32:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:16:32:26] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:16:32:26] ENGINE Bus STARTED
+[09/Dec/2014:16:34:43] ENGINE Bus STOPPING
+[09/Dec/2014:16:34:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:16:34:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:16:34:43] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:16:34:43] ENGINE Bus STOPPED
+[09/Dec/2014:16:34:43] ENGINE Bus EXITING
+[09/Dec/2014:16:34:43] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:16:34:43] ENGINE Bus EXITED
+[09/Dec/2014:16:34:46] ENGINE Bus STARTING
+[09/Dec/2014:16:34:46] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:16:34:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:16:34:46] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:16:34:46] ENGINE Bus STARTED
+[09/Dec/2014:16:49:11] ENGINE Bus STOPPING
+[09/Dec/2014:16:49:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:16:49:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:16:49:11] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:16:49:11] ENGINE Bus STOPPED
+[09/Dec/2014:16:49:11] ENGINE Bus EXITING
+[09/Dec/2014:16:49:11] ENGINE Bus EXITED
+[09/Dec/2014:16:49:11] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:16:49:19] ENGINE Bus STARTING
+[09/Dec/2014:16:49:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:16:49:19] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:16:49:19] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:16:49:19] ENGINE Bus STARTED
+[09/Dec/2014:17:10:56] ENGINE Bus STOPPING
+[09/Dec/2014:17:10:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:10:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:10:57] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:10:57] ENGINE Bus STOPPED
+[09/Dec/2014:17:10:57] ENGINE Bus EXITING
+[09/Dec/2014:17:10:57] ENGINE Bus EXITED
+[09/Dec/2014:17:10:57] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:11:00] ENGINE Bus STARTING
+[09/Dec/2014:17:11:00] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:11:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:11:00] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:11:00] ENGINE Bus STARTED
+[09/Dec/2014:17:13:14] ENGINE Bus STOPPING
+[09/Dec/2014:17:13:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:13:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:13:14] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:13:14] ENGINE Bus STOPPED
+[09/Dec/2014:17:13:14] ENGINE Bus EXITING
+[09/Dec/2014:17:13:14] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:13:14] ENGINE Bus EXITED
+[09/Dec/2014:17:13:17] ENGINE Bus STARTING
+[09/Dec/2014:17:13:17] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:13:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:13:17] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:13:17] ENGINE Bus STARTED
+[09/Dec/2014:17:19:32] ENGINE Bus STOPPING
+[09/Dec/2014:17:19:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:19:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:19:32] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:19:32] ENGINE Bus STOPPED
+[09/Dec/2014:17:19:32] ENGINE Bus EXITING
+[09/Dec/2014:17:19:32] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:19:32] ENGINE Bus EXITED
+[09/Dec/2014:17:19:43] ENGINE Bus STARTING
+[09/Dec/2014:17:19:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:19:43] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:19:43] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:19:43] ENGINE Bus STARTED
+[09/Dec/2014:17:25:56] ENGINE Bus STOPPING
+[09/Dec/2014:17:25:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:25:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:25:56] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:25:56] ENGINE Bus STOPPED
+[09/Dec/2014:17:25:56] ENGINE Bus EXITING
+[09/Dec/2014:17:25:56] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:25:56] ENGINE Bus EXITED
+[09/Dec/2014:17:25:59] ENGINE Bus STARTING
+[09/Dec/2014:17:25:59] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:25:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:25:59] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:25:59] ENGINE Bus STARTED
+[09/Dec/2014:17:37:00] ENGINE Bus STOPPING
+[09/Dec/2014:17:37:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:37:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:37:00] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:37:00] ENGINE Bus STOPPED
+[09/Dec/2014:17:37:00] ENGINE Bus EXITING
+[09/Dec/2014:17:37:00] ENGINE Bus EXITED
+[09/Dec/2014:17:37:00] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:37:03] ENGINE Bus STARTING
+[09/Dec/2014:17:37:03] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:37:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:37:03] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:37:03] ENGINE Bus STARTED
+[09/Dec/2014:17:47:23] ENGINE Bus STOPPING
+[09/Dec/2014:17:47:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[09/Dec/2014:17:47:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[09/Dec/2014:17:47:23] ENGINE Stopped thread 'Monitor'.
+[09/Dec/2014:17:47:23] ENGINE Bus STOPPED
+[09/Dec/2014:17:47:23] ENGINE Bus EXITING
+[09/Dec/2014:17:47:23] ENGINE Waiting for child threads to terminate...
+[09/Dec/2014:17:47:23] ENGINE Bus EXITED
+[09/Dec/2014:17:47:27] ENGINE Bus STARTING
+[09/Dec/2014:17:47:27] ENGINE Started monitor thread 'Monitor'.
+[09/Dec/2014:17:47:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[09/Dec/2014:17:47:27] ENGINE Serving on http://0.0.0.0:8989
+[09/Dec/2014:17:47:27] ENGINE Bus STARTED
+[10/Dec/2014:09:22:01] ENGINE Bus STARTING
+[10/Dec/2014:09:22:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:09:22:01] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:09:22:01] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:09:22:01] ENGINE Bus STARTED
+[10/Dec/2014:16:53:32] ENGINE Bus STOPPING
+[10/Dec/2014:16:53:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:53:32] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:53:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:53:32] ENGINE Bus STOPPED
+[10/Dec/2014:16:53:32] ENGINE Bus EXITING
+[10/Dec/2014:16:53:32] ENGINE Bus EXITED
+[10/Dec/2014:16:53:32] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:53:38] ENGINE Bus STARTING
+[10/Dec/2014:16:53:38] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:53:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:53:38] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:53:38] ENGINE Bus STARTED
+[10/Dec/2014:16:53:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 93, in ovcacheditems
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
 
-[08/Dec/2014:16:39:29] ENGINE Bus STOPPING
-[08/Dec/2014:16:39:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:39:29] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:39:29] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:39:29] ENGINE Bus STOPPED
-[08/Dec/2014:16:39:29] ENGINE Bus EXITING
-[08/Dec/2014:16:39:29] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:39:29] ENGINE Bus EXITED
-[08/Dec/2014:16:39:32] ENGINE Bus STARTING
-[08/Dec/2014:16:39:32] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:39:32] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:39:32] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:39:32] ENGINE Bus STARTED
-[08/Dec/2014:16:40:02] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x000000000287D438>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[10/Dec/2014:16:53:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 79, in ovcmds
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
 
-[08/Dec/2014:16:43:46] ENGINE Bus STOPPING
-[08/Dec/2014:16:43:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:43:46] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:43:46] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:43:46] ENGINE Bus STOPPED
-[08/Dec/2014:16:43:46] ENGINE Bus EXITING
-[08/Dec/2014:16:43:46] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:43:46] ENGINE Bus EXITED
-[08/Dec/2014:16:43:50] ENGINE Bus STARTING
-[08/Dec/2014:16:43:50] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:43:50] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:43:50] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:43:50] ENGINE Bus STARTED
-[08/Dec/2014:16:44:20] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002837EF0>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[10/Dec/2014:16:53:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 107, in ovmemory
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
 
-[08/Dec/2014:16:44:38] ENGINE Bus STOPPING
-[08/Dec/2014:16:44:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:44:39] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:44:39] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:44:39] ENGINE Bus STOPPED
-[08/Dec/2014:16:44:39] ENGINE Bus EXITING
-[08/Dec/2014:16:44:39] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:44:39] ENGINE Bus EXITED
-[08/Dec/2014:16:44:43] ENGINE Bus STARTING
-[08/Dec/2014:16:44:43] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:44:43] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:44:43] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:44:43] ENGINE Bus STARTED
-[08/Dec/2014:16:45:13] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002837DA0>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[10/Dec/2014:16:53:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in ovhits
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
 
-[08/Dec/2014:16:45:27] ENGINE Bus STOPPING
-[08/Dec/2014:16:45:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
-[08/Dec/2014:16:45:27] ENGINE Stopped thread '_TimeoutMonitor'.
-[08/Dec/2014:16:45:27] ENGINE Stopped thread 'Monitor'.
-[08/Dec/2014:16:45:27] ENGINE Bus STOPPED
-[08/Dec/2014:16:45:27] ENGINE Bus EXITING
-[08/Dec/2014:16:45:27] ENGINE Waiting for child threads to terminate...
-[08/Dec/2014:16:45:27] ENGINE Bus EXITED
-[08/Dec/2014:16:45:31] ENGINE Bus STARTING
-[08/Dec/2014:16:45:31] ENGINE Started monitor thread 'Monitor'.
-[08/Dec/2014:16:45:31] ENGINE Started monitor thread '_TimeoutMonitor'.
-[08/Dec/2014:16:45:31] ENGINE Serving on http://0.0.0.0:8989
-[08/Dec/2014:16:45:31] ENGINE Bus STARTED
-[08/Dec/2014:16:46:01] ENGINE Error in background task thread function <bound method Daemon.execute of <controller.daemon.Daemon object at 0x0000000002877E10>>.
-Traceback (most recent call last):
-  File "C:\Python34\lib\site-packages\cherrypy\process\plugins.py", line 500, in run
-    self.function(*self.args, **self.kwargs)
-  File "C:\Users\vbalaud\Documents\memdash\controller\daemon.py", line 21, in execute
-    for server in MDatabase.get_servers():
-AttributeError: type object 'MDatabase' has no attribute 'get_servers'
+[10/Dec/2014:16:54:00] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in ovhits
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
 
+[10/Dec/2014:16:54:00] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 79, in ovcmds
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
+
+[10/Dec/2014:16:54:00] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 93, in ovcacheditems
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
+
+[10/Dec/2014:16:54:00] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 107, in ovmemory
+    startdate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
+
+[10/Dec/2014:16:54:28] ENGINE Bus STOPPING
+[10/Dec/2014:16:54:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:54:28] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:54:28] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:54:28] ENGINE Bus STOPPED
+[10/Dec/2014:16:54:28] ENGINE Bus EXITING
+[10/Dec/2014:16:54:28] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:54:28] ENGINE Bus EXITED
+[10/Dec/2014:16:54:32] ENGINE Bus STARTING
+[10/Dec/2014:16:54:32] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:54:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:54:32] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:54:32] ENGINE Bus STARTED
+[10/Dec/2014:16:55:04] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 16, in hits
+    return graph.Graph.get_hitsgraph(server)
+TypeError: get_hitsgraph() missing 2 required positional arguments: 'startdate' and 'enddate'
+
+[10/Dec/2014:16:55:52] ENGINE Bus STOPPING
+[10/Dec/2014:16:55:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:55:52] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:55:52] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:55:52] ENGINE Bus STOPPED
+[10/Dec/2014:16:55:52] ENGINE Bus EXITING
+[10/Dec/2014:16:55:52] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:55:52] ENGINE Bus EXITED
+[10/Dec/2014:16:55:59] ENGINE Bus STARTING
+[10/Dec/2014:16:55:59] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:55:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:56:00] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:56:00] ENGINE Bus STARTED
+[10/Dec/2014:16:56:34] ENGINE Bus STOPPING
+[10/Dec/2014:16:56:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:56:34] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:56:34] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:56:34] ENGINE Bus STOPPED
+[10/Dec/2014:16:56:34] ENGINE Bus EXITING
+[10/Dec/2014:16:56:34] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:56:34] ENGINE Bus EXITED
+[10/Dec/2014:16:56:41] ENGINE Bus STARTING
+[10/Dec/2014:16:56:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:56:41] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:56:41] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:56:41] ENGINE Bus STARTED
+[10/Dec/2014:16:57:04] ENGINE Bus STOPPING
+[10/Dec/2014:16:57:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:57:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:57:09] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:57:09] ENGINE Bus STOPPED
+[10/Dec/2014:16:57:09] ENGINE Bus EXITING
+[10/Dec/2014:16:57:09] ENGINE Bus EXITED
+[10/Dec/2014:16:57:09] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:57:20] ENGINE Bus STARTING
+[10/Dec/2014:16:57:20] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:57:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:57:20] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:57:20] ENGINE Bus STARTED
+[10/Dec/2014:16:57:36] ENGINE Bus STOPPING
+[10/Dec/2014:16:57:36] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:16:57:36] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:16:57:36] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:16:57:36] ENGINE Bus STOPPED
+[10/Dec/2014:16:57:36] ENGINE Bus EXITING
+[10/Dec/2014:16:57:36] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:16:57:36] ENGINE Bus EXITED
+[10/Dec/2014:16:58:32] ENGINE Bus STARTING
+[10/Dec/2014:16:58:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:16:58:32] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:16:58:32] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:16:58:32] ENGINE Bus STARTED
+[10/Dec/2014:17:00:57] ENGINE Bus STOPPING
+[10/Dec/2014:17:00:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:00:57] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:00:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:00:57] ENGINE Bus STOPPED
+[10/Dec/2014:17:00:57] ENGINE Bus EXITING
+[10/Dec/2014:17:00:57] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:00:57] ENGINE Bus EXITED
+[10/Dec/2014:17:01:00] ENGINE Bus STARTING
+[10/Dec/2014:17:01:00] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:01:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:01:00] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:01:00] ENGINE Bus STARTED
+[10/Dec/2014:17:06:39] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 19, in hits
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:39] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 33, in cmds
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:39] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:39] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 47, in cacheditems
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 19, in hits
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 33, in cmds
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:06:44] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 47, in cacheditems
+    startdate = datetiem.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+NameError: name 'datetiem' is not defined
+
+[10/Dec/2014:17:07:59] ENGINE Bus STOPPING
+[10/Dec/2014:17:07:59] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:07:59] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:07:59] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:07:59] ENGINE Bus STOPPED
+[10/Dec/2014:17:07:59] ENGINE Bus EXITING
+[10/Dec/2014:17:07:59] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:07:59] ENGINE Bus EXITED
+[10/Dec/2014:17:08:02] ENGINE Bus STARTING
+[10/Dec/2014:17:08:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:08:02] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:08:02] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:08:02] ENGINE Bus STARTED
+[10/Dec/2014:17:08:15] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 19, in hits
+    startdate = datetime.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+AttributeError: 'int' object has no attribute 'strftime'
+
+[10/Dec/2014:17:08:15] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 33, in cmds
+    startdate = datetime.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+AttributeError: 'int' object has no attribute 'strftime'
+
+[10/Dec/2014:17:08:15] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 47, in cacheditems
+    startdate = datetime.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+AttributeError: 'int' object has no attribute 'strftime'
+
+[10/Dec/2014:17:08:15] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetime.datetime.fromtimestamp(int(startdate).strftime('%Y-%m-%d %H:%M:%S'))
+AttributeError: 'int' object has no attribute 'strftime'
+
+[10/Dec/2014:17:09:22] ENGINE Bus STOPPING
+[10/Dec/2014:17:09:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:09:22] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:09:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:09:22] ENGINE Bus STOPPED
+[10/Dec/2014:17:09:22] ENGINE Bus EXITING
+[10/Dec/2014:17:09:22] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:09:22] ENGINE Bus EXITED
+[10/Dec/2014:17:09:25] ENGINE Bus STARTING
+[10/Dec/2014:17:09:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:09:25] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:09:25] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:09:25] ENGINE Bus STARTED
+[10/Dec/2014:17:09:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 33, in cmds
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:09:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 19, in hits
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:09:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 47, in cacheditems
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:09:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:11:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 33, in cmds
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:11:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 19, in hits
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:11:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:11:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 47, in cacheditems
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:12:13] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 61, in memory
+    startdate = datetime.datetime.fromtimestamp(int(startdate)).strftime('%Y-%m-%d %H:%M:%S')
+OSError: [Errno 22] Invalid argument
+
+[10/Dec/2014:17:17:57] ENGINE Bus STOPPING
+[10/Dec/2014:17:17:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:17:57] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:17:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:17:57] ENGINE Bus STOPPED
+[10/Dec/2014:17:17:57] ENGINE Bus EXITING
+[10/Dec/2014:17:17:57] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:17:57] ENGINE Bus EXITED
+[10/Dec/2014:17:18:00] ENGINE Bus STARTING
+[10/Dec/2014:17:18:00] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:18:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:18:01] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:18:01] ENGINE Bus STARTED
+[10/Dec/2014:17:19:00] ENGINE Bus STOPPING
+[10/Dec/2014:17:19:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:19:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:19:00] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:19:00] ENGINE Bus STOPPED
+[10/Dec/2014:17:19:00] ENGINE Bus EXITING
+[10/Dec/2014:17:19:00] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:19:00] ENGINE Bus EXITED
+[10/Dec/2014:17:19:04] ENGINE Bus STARTING
+[10/Dec/2014:17:19:04] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:19:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:19:04] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:19:04] ENGINE Bus STARTED
+[10/Dec/2014:17:19:39] ENGINE Bus STOPPING
+[10/Dec/2014:17:19:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:19:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:19:39] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:19:39] ENGINE Bus STOPPED
+[10/Dec/2014:17:19:39] ENGINE Bus EXITING
+[10/Dec/2014:17:19:39] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:19:39] ENGINE Bus EXITED
+[10/Dec/2014:17:19:42] ENGINE Bus STARTING
+[10/Dec/2014:17:19:42] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:19:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:19:42] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:19:42] ENGINE Bus STARTED
+[10/Dec/2014:17:23:00] ENGINE Bus STOPPING
+[10/Dec/2014:17:23:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:23:01] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:23:01] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:23:01] ENGINE Bus STOPPED
+[10/Dec/2014:17:23:01] ENGINE Bus EXITING
+[10/Dec/2014:17:23:01] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:23:01] ENGINE Bus EXITED
+[10/Dec/2014:17:23:04] ENGINE Bus STARTING
+[10/Dec/2014:17:23:04] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:23:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:23:05] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:23:05] ENGINE Bus STARTED
+[10/Dec/2014:17:24:57] ENGINE Bus STOPPING
+[10/Dec/2014:17:24:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:24:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:24:57] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:24:57] ENGINE Bus STOPPED
+[10/Dec/2014:17:24:57] ENGINE Bus EXITING
+[10/Dec/2014:17:24:57] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:24:57] ENGINE Bus EXITED
+[10/Dec/2014:17:25:00] ENGINE Bus STARTING
+[10/Dec/2014:17:25:00] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:25:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:25:00] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:25:00] ENGINE Bus STARTED
+[10/Dec/2014:17:32:10] ENGINE Bus STOPPING
+[10/Dec/2014:17:32:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:32:10] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:32:10] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:32:10] ENGINE Bus STOPPED
+[10/Dec/2014:17:32:10] ENGINE Bus EXITING
+[10/Dec/2014:17:32:10] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:32:10] ENGINE Bus EXITED
+[10/Dec/2014:17:32:13] ENGINE Bus STARTING
+[10/Dec/2014:17:32:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:32:13] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:32:13] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:32:13] ENGINE Bus STARTED
+[10/Dec/2014:17:32:36] ENGINE Bus STOPPING
+[10/Dec/2014:17:32:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:32:37] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:32:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:32:37] ENGINE Bus STOPPED
+[10/Dec/2014:17:32:37] ENGINE Bus EXITING
+[10/Dec/2014:17:32:37] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:32:37] ENGINE Bus EXITED
+[10/Dec/2014:17:32:39] ENGINE Bus STARTING
+[10/Dec/2014:17:32:39] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:32:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:32:40] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:32:40] ENGINE Bus STARTED
+[10/Dec/2014:17:32:45] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 23, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 18, in get_hitsgraph
+    con.execute(sql_query, (sid, startdate, enddate))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
+    warn(w[-1], self.Warning, 3)
+  File "C:\Python34\lib\warnings.py", line 15, in showwarning
+    file.write(formatwarning(message, category, filename, lineno, line))
+AttributeError: 'NoneType' object has no attribute 'write'
+
+[10/Dec/2014:17:32:58] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 23, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 18, in get_hitsgraph
+    con.execute(sql_query, (sid, startdate, enddate))
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 221, in execute
+    if not self._defer_warnings: self._warning_check()
+  File "C:\Python34\lib\site-packages\MySQLdb\cursors.py", line 114, in _warning_check
+    warn(w[-1], self.Warning, 3)
+  File "C:\Python34\lib\warnings.py", line 15, in showwarning
+    file.write(formatwarning(message, category, filename, lineno, line))
+AttributeError: 'NoneType' object has no attribute 'write'
+
+[10/Dec/2014:17:51:42] ENGINE Bus STOPPING
+[10/Dec/2014:17:51:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:51:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:51:43] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:51:43] ENGINE Bus STOPPED
+[10/Dec/2014:17:51:43] ENGINE Bus EXITING
+[10/Dec/2014:17:51:43] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:51:43] ENGINE Bus EXITED
+[10/Dec/2014:17:51:46] ENGINE Bus STARTING
+[10/Dec/2014:17:51:46] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:51:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:51:46] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:51:46] ENGINE Bus STARTED
+[10/Dec/2014:17:51:48] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 148, in get_memory
+    d1 = datetime.strptime(startdate, '%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
+
+[10/Dec/2014:17:51:49] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 148, in get_memory
+    d1 = datetime.strptime(startdate, '%Y-%m-%d %H:%M:%S')
+NameError: name 'datetime' is not defined
+
+[10/Dec/2014:17:52:15] ENGINE Bus STOPPING
+[10/Dec/2014:17:52:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:52:15] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:52:15] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:52:15] ENGINE Bus STOPPED
+[10/Dec/2014:17:52:15] ENGINE Bus EXITING
+[10/Dec/2014:17:52:15] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:52:15] ENGINE Bus EXITED
+[10/Dec/2014:17:52:18] ENGINE Bus STARTING
+[10/Dec/2014:17:52:18] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:52:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:52:18] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:52:18] ENGINE Bus STARTED
+[10/Dec/2014:17:52:28] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:52:28] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:52:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:52:33] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:52:37] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:52:37] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:56:05] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:56:05] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:24] ENGINE Bus STOPPING
+[10/Dec/2014:17:58:24] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:17:58:24] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:17:58:24] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:17:58:24] ENGINE Bus STOPPED
+[10/Dec/2014:17:58:24] ENGINE Bus EXITING
+[10/Dec/2014:17:58:24] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:17:58:24] ENGINE Bus EXITED
+[10/Dec/2014:17:58:27] ENGINE Bus STARTING
+[10/Dec/2014:17:58:27] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:17:58:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:17:58:27] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:17:58:27] ENGINE Bus STARTED
+[10/Dec/2014:17:58:38] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:38] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:40] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:40] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:43] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:43] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:47] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:17:58:47] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:17] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:17] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:19] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:21] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:21] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:25] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:25] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:27] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:27] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:28] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:28] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:00:30] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:01:10] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 64, in memory
+    return graph.Graph.get_memory(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 164, in get_memory
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:01:10] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 50, in cacheditems
+    return graph.Graph.get_cacheditems(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 127, in get_cacheditems
+    labels.append(server[1].strftime("%H:%M:%S"))
+IndexError: tuple index out of range
+
+[10/Dec/2014:18:04:35] ENGINE Bus STOPPING
+[10/Dec/2014:18:04:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:18:04:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:18:04:35] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:18:04:35] ENGINE Bus STOPPED
+[10/Dec/2014:18:04:35] ENGINE Bus EXITING
+[10/Dec/2014:18:04:35] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:18:04:35] ENGINE Bus EXITED
+[10/Dec/2014:18:04:38] ENGINE Bus STARTING
+[10/Dec/2014:18:04:38] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:18:04:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:18:04:38] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:18:04:38] ENGINE Bus STARTED
+[10/Dec/2014:18:07:08] ENGINE Bus STOPPING
+[10/Dec/2014:18:07:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[10/Dec/2014:18:07:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Dec/2014:18:07:08] ENGINE Stopped thread 'Monitor'.
+[10/Dec/2014:18:07:08] ENGINE Bus STOPPED
+[10/Dec/2014:18:07:08] ENGINE Bus EXITING
+[10/Dec/2014:18:07:08] ENGINE Waiting for child threads to terminate...
+[10/Dec/2014:18:07:08] ENGINE Bus EXITED
+[10/Dec/2014:18:07:11] ENGINE Bus STARTING
+[10/Dec/2014:18:07:11] ENGINE Started monitor thread 'Monitor'.
+[10/Dec/2014:18:07:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Dec/2014:18:07:11] ENGINE Serving on http://0.0.0.0:8989
+[10/Dec/2014:18:07:11] ENGINE Bus STARTED
+[11/Dec/2014:09:20:16] ENGINE Bus STARTING
+[11/Dec/2014:09:20:16] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:09:20:16] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:09:20:17] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:09:20:17] ENGINE Bus STARTED
+[11/Dec/2014:09:41:06] ENGINE Bus STOPPING
+[11/Dec/2014:09:41:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:09:41:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:09:41:06] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:09:41:06] ENGINE Bus STOPPED
+[11/Dec/2014:09:41:06] ENGINE Bus EXITING
+[11/Dec/2014:09:41:06] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:09:41:06] ENGINE Bus EXITED
+[11/Dec/2014:09:41:12] ENGINE Bus STARTING
+[11/Dec/2014:09:41:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:09:41:12] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:09:41:13] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:09:41:13] ENGINE Bus STARTED
+[11/Dec/2014:09:43:26] ENGINE Bus STOPPING
+[11/Dec/2014:09:43:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:09:43:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:09:43:26] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:09:43:26] ENGINE Bus STOPPED
+[11/Dec/2014:09:43:26] ENGINE Bus EXITING
+[11/Dec/2014:09:43:26] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:09:43:26] ENGINE Bus EXITED
+[11/Dec/2014:09:43:30] ENGINE Bus STARTING
+[11/Dec/2014:09:43:30] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:09:43:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:09:43:30] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:09:43:30] ENGINE Bus STARTED
+[11/Dec/2014:09:43:34]  2014-12-11 09:43:34
+[11/Dec/2014:09:43:34]  2014-12-11 09:28:34
+[11/Dec/2014:09:45:45]  2014-12-11 03:43:32
+[11/Dec/2014:09:45:45]  2014-12-11 09:43:32
+[11/Dec/2014:09:45:47]  2014-12-11 00:00:00
+[11/Dec/2014:09:45:47]  2014-12-11 23:59:59
+[11/Dec/2014:09:45:50]  2014-12-10 00:00:00
+[11/Dec/2014:09:45:50]  2014-12-10 23:59:59
+[11/Dec/2014:09:45:59]  2014-12-11 08:43:32
+[11/Dec/2014:09:45:59]  2014-12-11 09:43:32
+[11/Dec/2014:09:46:02]  2014-12-11 03:43:32
+[11/Dec/2014:09:46:02]  2014-12-11 09:43:32
+[11/Dec/2014:09:46:18]  2014-12-11 03:43:32
+[11/Dec/2014:09:46:18]  2014-12-11 09:43:32
+[11/Dec/2014:09:46:45]  2014-12-11 03:43:32
+[11/Dec/2014:09:46:45]  2014-12-11 09:43:32
+[11/Dec/2014:09:48:32]  2014-12-11 09:48:32
+[11/Dec/2014:09:48:32]  2014-12-11 09:33:32
+[11/Dec/2014:09:51:39]  2014-12-11 08:43:32
+[11/Dec/2014:09:51:39]  2014-12-11 09:43:32
+[11/Dec/2014:09:51:42]  2014-12-11 03:43:32
+[11/Dec/2014:09:51:42]  2014-12-11 09:43:32
+[11/Dec/2014:09:51:46]  2014-12-11 03:43:32
+[11/Dec/2014:09:51:46]  2014-12-11 09:43:32
+[11/Dec/2014:09:51:48]  2014-12-10 21:43:32
+[11/Dec/2014:09:51:48]  2014-12-11 09:43:32
+[11/Dec/2014:09:51:51]  2014-12-11 00:00:00
+[11/Dec/2014:09:51:51]  2014-12-11 23:59:59
+[11/Dec/2014:09:51:54]  2014-12-10 00:00:00
+[11/Dec/2014:09:51:54]  2014-12-10 23:59:59
+[11/Dec/2014:09:51:56]  2014-12-04 00:00:00
+[11/Dec/2014:09:51:56]  2014-12-11 23:59:59
+[11/Dec/2014:09:51:59]  2014-11-11 00:00:00
+[11/Dec/2014:09:51:59]  2014-12-11 23:59:59
+[11/Dec/2014:09:52:03]  2014-12-01 00:00:00
+[11/Dec/2014:09:52:03]  2014-12-31 00:00:00
+[11/Dec/2014:09:52:06]  2014-12-11 08:43:32
+[11/Dec/2014:09:52:06]  2014-12-11 09:43:32
+[11/Dec/2014:09:52:12]  2014-12-11 09:52:12
+[11/Dec/2014:09:52:12]  2014-12-11 09:37:12
+[11/Dec/2014:09:52:29]  2014-12-11 08:52:09
+[11/Dec/2014:09:52:29]  2014-12-11 09:52:09
+[11/Dec/2014:09:52:33]  2014-12-11 09:52:33
+[11/Dec/2014:09:52:33]  2014-12-11 09:37:33
+[11/Dec/2014:09:52:41]  2014-12-11 09:52:41
+[11/Dec/2014:09:52:41]  2014-12-11 09:37:41
+[11/Dec/2014:09:54:43] ENGINE Bus STOPPING
+[11/Dec/2014:09:54:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:09:54:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:09:54:43] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:09:54:43] ENGINE Bus STOPPED
+[11/Dec/2014:09:54:43] ENGINE Bus EXITING
+[11/Dec/2014:09:54:43] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:09:54:43] ENGINE Bus EXITED
+[11/Dec/2014:09:54:46] ENGINE Bus STARTING
+[11/Dec/2014:09:54:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:09:54:46] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:09:54:46] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:09:54:46] ENGINE Bus STARTED
+[11/Dec/2014:09:54:50]  2014-12-11 09:39:50
+[11/Dec/2014:09:54:50]  2014-12-11 09:54:50
+[11/Dec/2014:09:56:35]  2014-11-12 09:54:48
+[11/Dec/2014:09:56:35]  2014-12-17 09:54:48
+[11/Dec/2014:09:56:45]  2014-12-11 09:41:45
+[11/Dec/2014:09:56:45]  2014-12-11 09:56:45
+[11/Dec/2014:10:00:32] ENGINE Bus STOPPING
+[11/Dec/2014:10:00:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:10:00:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:10:00:32] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:10:00:32] ENGINE Bus STOPPED
+[11/Dec/2014:10:00:32] ENGINE Bus EXITING
+[11/Dec/2014:10:00:32] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:10:00:32] ENGINE Bus EXITED
+[11/Dec/2014:10:01:14] ENGINE Bus STARTING
+[11/Dec/2014:10:01:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:10:01:14] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:10:01:14] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:10:01:14] ENGINE Bus STARTED
+[11/Dec/2014:10:01:17]  2014-12-11 09:46:17
+[11/Dec/2014:10:01:17]  2014-12-11 10:01:17
+[11/Dec/2014:10:03:34]  2014-12-11 09:48:34
+[11/Dec/2014:10:03:34]  2014-12-11 10:03:34
+[11/Dec/2014:10:27:45]  2014-12-11 10:12:45
+[11/Dec/2014:10:27:45]  2014-12-11 10:27:45
+[11/Dec/2014:10:28:33]  2014-12-11 10:13:33
+[11/Dec/2014:10:28:33]  2014-12-11 10:28:33
+[11/Dec/2014:10:33:29]  2014-12-11 10:18:29
+[11/Dec/2014:10:33:29]  2014-12-11 10:33:29
+[11/Dec/2014:10:34:33]  2014-12-11 10:19:33
+[11/Dec/2014:10:34:33]  2014-12-11 10:34:33
+[11/Dec/2014:10:37:42]  2014-12-11 10:22:42
+[11/Dec/2014:10:37:42]  2014-12-11 10:37:42
+[11/Dec/2014:10:39:26]  2014-12-11 10:24:26
+[11/Dec/2014:10:39:26]  2014-12-11 10:39:26
+[11/Dec/2014:10:41:01]  2014-12-11 10:26:01
+[11/Dec/2014:10:41:01]  2014-12-11 10:41:01
+[11/Dec/2014:10:42:30]  2014-12-11 10:27:30
+[11/Dec/2014:10:42:30]  2014-12-11 10:42:30
+[11/Dec/2014:10:43:25]  2014-12-11 10:28:25
+[11/Dec/2014:10:43:25]  2014-12-11 10:43:25
+[11/Dec/2014:10:46:50]  2014-12-11 10:31:50
+[11/Dec/2014:10:46:50]  2014-12-11 10:46:50
+[11/Dec/2014:10:47:54]  2014-12-11 10:32:54
+[11/Dec/2014:10:47:54]  2014-12-11 10:47:54
+[11/Dec/2014:10:49:31]  2014-12-11 10:34:31
+[11/Dec/2014:10:49:31]  2014-12-11 10:49:31
+[11/Dec/2014:10:49:48]  2014-12-11 10:34:48
+[11/Dec/2014:10:49:48]  2014-12-11 10:49:48
+[11/Dec/2014:10:52:16]  2014-12-11 10:37:16
+[11/Dec/2014:10:52:16]  2014-12-11 10:52:16
+[11/Dec/2014:10:54:44]  2014-12-11 10:39:44
+[11/Dec/2014:10:54:44]  2014-12-11 10:54:44
+[11/Dec/2014:11:00:21]  2014-12-11 10:45:21
+[11/Dec/2014:11:00:21]  2014-12-11 11:00:21
+[11/Dec/2014:11:00:38]  2014-12-11 10:45:38
+[11/Dec/2014:11:00:38]  2014-12-11 11:00:38
+[11/Dec/2014:11:00:52]  2014-12-11 10:45:52
+[11/Dec/2014:11:00:52]  2014-12-11 11:00:52
+[11/Dec/2014:11:01:08]  2014-12-11 10:46:08
+[11/Dec/2014:11:01:08]  2014-12-11 11:01:08
+[11/Dec/2014:11:03:18]  2014-12-11 10:48:18
+[11/Dec/2014:11:03:18]  2014-12-11 11:03:18
+[11/Dec/2014:11:04:45]  2014-12-11 10:49:45
+[11/Dec/2014:11:04:45]  2014-12-11 11:04:45
+[11/Dec/2014:11:04:56] ENGINE Bus STOPPING
+[11/Dec/2014:11:04:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:11:04:57] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:11:04:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:11:04:57] ENGINE Bus STOPPED
+[11/Dec/2014:11:04:57] ENGINE Bus EXITING
+[11/Dec/2014:11:04:57] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:11:04:57] ENGINE Bus EXITED
+[11/Dec/2014:11:05:00] ENGINE Bus STARTING
+[11/Dec/2014:11:05:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:11:05:00] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:11:05:01] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:11:05:01] ENGINE Bus STARTED
+[11/Dec/2014:11:05:03]  2014-12-11 10:50:03
+[11/Dec/2014:11:05:03]  2014-12-11 11:05:03
+[11/Dec/2014:11:06:28]  2014-12-11 10:51:28
+[11/Dec/2014:11:06:28]  2014-12-11 11:06:28
+[11/Dec/2014:11:07:53]  2014-12-11 10:52:53
+[11/Dec/2014:11:07:53]  2014-12-11 11:07:53
+[11/Dec/2014:11:11:28]  2014-12-11 10:56:28
+[11/Dec/2014:11:11:28]  2014-12-11 11:11:28
+[11/Dec/2014:11:11:55]  2014-12-11 10:56:55
+[11/Dec/2014:11:11:55]  2014-12-11 11:11:55
+[11/Dec/2014:11:14:45] ENGINE Bus STOPPING
+[11/Dec/2014:11:14:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:11:14:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:11:14:45] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:11:14:45] ENGINE Bus STOPPED
+[11/Dec/2014:11:14:45] ENGINE Bus EXITING
+[11/Dec/2014:11:14:45] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:11:14:45] ENGINE Bus EXITED
+[11/Dec/2014:11:14:48] ENGINE Bus STARTING
+[11/Dec/2014:11:14:48] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:11:14:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:11:14:48] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:11:14:48] ENGINE Bus STARTED
+[11/Dec/2014:11:19:10]  2014-12-11 11:04:10
+[11/Dec/2014:11:19:10]  2014-12-11 11:19:10
+[11/Dec/2014:11:19:15]  2014-12-11 11:04:15
+[11/Dec/2014:11:19:15]  2014-12-11 11:19:15
+[11/Dec/2014:11:19:55]  2014-12-11 11:04:55
+[11/Dec/2014:11:19:55]  2014-12-11 11:19:55
+[11/Dec/2014:11:20:08]  2014-12-11 11:05:08
+[11/Dec/2014:11:20:08]  2014-12-11 11:20:08
+[11/Dec/2014:11:23:02]  2014-12-11 11:08:02
+[11/Dec/2014:11:23:02]  2014-12-11 11:23:02
+[11/Dec/2014:11:35:18]  2014-12-11 11:20:18
+[11/Dec/2014:11:35:18]  2014-12-11 11:35:18
+[11/Dec/2014:11:40:19]  2014-12-11 11:25:19
+[11/Dec/2014:11:40:19]  2014-12-11 11:40:19
+[11/Dec/2014:11:41:03]  2014-12-11 11:26:03
+[11/Dec/2014:11:41:03]  2014-12-11 11:41:03
+[11/Dec/2014:11:41:18]  2014-12-11 11:26:18
+[11/Dec/2014:11:41:18]  2014-12-11 11:41:18
+[11/Dec/2014:11:49:35]  2014-12-11 11:34:35
+[11/Dec/2014:11:49:35]  2014-12-11 11:49:35
+[11/Dec/2014:11:53:19]  2014-12-11 11:38:19
+[11/Dec/2014:11:53:19]  2014-12-11 11:53:19
+[11/Dec/2014:11:56:45]  2014-12-11 11:41:45
+[11/Dec/2014:11:56:45]  2014-12-11 11:56:45
+[11/Dec/2014:11:56:50]  2014-12-11 09:56:43
+[11/Dec/2014:11:56:50]  2014-12-11 11:56:43
+[11/Dec/2014:11:56:53]  2014-12-11 05:56:43
+[11/Dec/2014:11:56:53]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:01]  2014-11-27 11:56:43
+[11/Dec/2014:11:57:01]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:10]  2014-12-04 11:56:43
+[11/Dec/2014:11:57:10]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:17]  2014-12-11 00:00:00
+[11/Dec/2014:11:57:17]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:25]  2014-12-10 11:56:43
+[11/Dec/2014:11:57:25]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:36]  2014-12-10 23:56:43
+[11/Dec/2014:11:57:36]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:40]  2014-12-11 08:56:43
+[11/Dec/2014:11:57:40]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:43]  2014-12-11 09:56:43
+[11/Dec/2014:11:57:43]  2014-12-11 11:56:43
+[11/Dec/2014:11:57:46]  2014-12-11 10:56:43
+[11/Dec/2014:11:57:46]  2014-12-11 11:56:43
+[11/Dec/2014:11:58:35]  2014-12-11 11:43:35
+[11/Dec/2014:11:58:35]  2014-12-11 11:58:35
+[11/Dec/2014:12:03:40]  2014-12-11 11:48:40
+[11/Dec/2014:12:03:40]  2014-12-11 12:03:40
+[11/Dec/2014:12:04:09]  2014-12-11 11:49:09
+[11/Dec/2014:12:04:09]  2014-12-11 12:04:09
+[11/Dec/2014:12:04:39]  2014-12-11 11:49:39
+[11/Dec/2014:12:04:39]  2014-12-11 12:04:39
+[11/Dec/2014:12:05:20]  2014-12-11 11:50:20
+[11/Dec/2014:12:05:20]  2014-12-11 12:05:20
+[11/Dec/2014:12:05:40]  2014-12-11 11:50:40
+[11/Dec/2014:12:05:40]  2014-12-11 12:05:40
+[11/Dec/2014:12:06:05]  2014-12-11 11:51:05
+[11/Dec/2014:12:06:05]  2014-12-11 12:06:05
+[11/Dec/2014:12:27:34]  2014-12-11 12:12:34
+[11/Dec/2014:12:27:34]  2014-12-11 12:27:34
+[11/Dec/2014:12:37:49]  2014-12-11 12:22:49
+[11/Dec/2014:12:37:49]  2014-12-11 12:37:49
+[11/Dec/2014:12:38:31]  2014-12-11 12:23:31
+[11/Dec/2014:12:38:31]  2014-12-11 12:38:31
+[11/Dec/2014:12:39:00]  2014-12-11 12:24:00
+[11/Dec/2014:12:39:00]  2014-12-11 12:39:00
+[11/Dec/2014:12:39:16]  2014-12-11 12:24:16
+[11/Dec/2014:12:39:16]  2014-12-11 12:39:16
+[11/Dec/2014:12:43:36]  2014-12-11 12:28:36
+[11/Dec/2014:12:43:36]  2014-12-11 12:43:36
+[11/Dec/2014:12:43:48]  2014-12-11 12:28:48
+[11/Dec/2014:12:43:48]  2014-12-11 12:43:48
+[11/Dec/2014:12:45:14]  2014-12-11 12:30:14
+[11/Dec/2014:12:45:14]  2014-12-11 12:45:14
+[11/Dec/2014:12:45:19]  2014-12-04 12:45:12
+[11/Dec/2014:12:45:19]  2014-12-11 12:45:12
+[11/Dec/2014:12:46:54]  2014-12-11 12:31:54
+[11/Dec/2014:12:46:54]  2014-12-11 12:46:54
+[11/Dec/2014:12:47:43]  2014-12-11 12:32:43
+[11/Dec/2014:12:47:43]  2014-12-11 12:47:43
+[11/Dec/2014:12:50:49]  2014-12-11 12:35:49
+[11/Dec/2014:12:50:49]  2014-12-11 12:50:49
+[11/Dec/2014:12:51:06]  2014-12-11 12:36:06
+[11/Dec/2014:12:51:06]  2014-12-11 12:51:06
+[11/Dec/2014:12:51:20]  2014-12-11 00:51:04
+[11/Dec/2014:12:51:20]  2014-12-11 12:51:04
+[11/Dec/2014:12:51:24]  2014-12-11 06:51:04
+[11/Dec/2014:12:51:24]  2014-12-11 12:51:04
+[11/Dec/2014:12:51:27]  2014-12-11 08:51:04
+[11/Dec/2014:12:51:27]  2014-12-11 12:51:04
+[11/Dec/2014:12:51:31]  2014-12-11 09:51:04
+[11/Dec/2014:12:51:31]  2014-12-11 12:51:04
+[11/Dec/2014:12:54:38]  2014-12-11 12:39:38
+[11/Dec/2014:12:54:38]  2014-12-11 12:54:38
+[11/Dec/2014:12:54:43]  2014-12-11 12:39:43
+[11/Dec/2014:12:54:43]  2014-12-11 12:54:43
+[11/Dec/2014:12:59:08]  2014-12-11 12:44:08
+[11/Dec/2014:12:59:08]  2014-12-11 12:59:08
+[11/Dec/2014:12:59:13]  2014-12-10 12:59:07
+[11/Dec/2014:12:59:13]  2014-12-11 12:59:07
+[11/Dec/2014:13:00:15] ENGINE Bus STOPPING
+[11/Dec/2014:13:00:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:13:00:15] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:13:00:15] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:13:00:15] ENGINE Bus STOPPED
+[11/Dec/2014:13:00:15] ENGINE Bus EXITING
+[11/Dec/2014:13:00:15] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:13:00:15] ENGINE Bus EXITED
+[11/Dec/2014:13:00:19] ENGINE Bus STARTING
+[11/Dec/2014:13:00:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:13:00:19] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:13:00:19] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:13:00:19] ENGINE Bus STARTED
+[11/Dec/2014:13:00:22]  2014-12-11 12:45:22
+[11/Dec/2014:13:00:22]  2014-12-11 13:00:22
+[11/Dec/2014:13:01:41]  2014-12-11 12:46:41
+[11/Dec/2014:13:01:41]  2014-12-11 13:01:41
+[11/Dec/2014:13:02:11]  2014-11-12 13:01:39
+[11/Dec/2014:13:02:11]  2014-12-11 13:01:39
+[11/Dec/2014:13:02:17]  2014-12-11 09:01:39
+[11/Dec/2014:13:02:17]  2014-12-11 13:01:39
+[11/Dec/2014:13:02:28]  2014-12-11 07:01:39
+[11/Dec/2014:13:02:28]  2014-12-11 13:01:39
+[11/Dec/2014:13:05:18]  2014-12-11 12:50:18
+[11/Dec/2014:13:05:18]  2014-12-11 13:05:18
+[11/Dec/2014:13:05:50]  2014-11-01 13:05:16
+[11/Dec/2014:13:05:50]  2014-12-11 13:05:16
+[11/Dec/2014:13:09:08] ENGINE Bus STOPPING
+[11/Dec/2014:13:09:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:13:09:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:13:09:08] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:13:09:08] ENGINE Bus STOPPED
+[11/Dec/2014:13:09:08] ENGINE Bus EXITING
+[11/Dec/2014:13:09:08] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:13:09:08] ENGINE Bus EXITED
+[11/Dec/2014:13:09:11] ENGINE Bus STARTING
+[11/Dec/2014:13:09:11] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:13:09:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:13:09:11] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:13:09:11] ENGINE Bus STARTED
+[11/Dec/2014:13:09:14]  2014-12-11 12:54:14
+[11/Dec/2014:13:09:14]  2014-12-11 13:09:14
+[11/Dec/2014:13:09:21]  2014-12-11 12:09:12
+[11/Dec/2014:13:09:21]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:24]  2014-12-11 11:09:12
+[11/Dec/2014:13:09:24]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:27]  2014-12-11 10:09:12
+[11/Dec/2014:13:09:27]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:30]  2014-12-11 09:09:12
+[11/Dec/2014:13:09:30]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:34]  2014-12-11 07:09:12
+[11/Dec/2014:13:09:34]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:38]  2014-12-11 12:09:12
+[11/Dec/2014:13:09:38]  2014-12-11 13:09:12
+[11/Dec/2014:13:09:45]  2014-12-11 12:54:45
+[11/Dec/2014:13:09:45]  2014-12-11 13:09:45
+[11/Dec/2014:13:10:26]  2014-12-11 12:55:26
+[11/Dec/2014:13:10:26]  2014-12-11 13:10:26
+[11/Dec/2014:13:10:43]  2014-12-11 12:55:43
+[11/Dec/2014:13:10:43]  2014-12-11 13:10:43
+[11/Dec/2014:13:10:46]  2014-12-11 12:55:41
+[11/Dec/2014:13:10:46]  2014-12-11 13:10:41
+[11/Dec/2014:13:10:53]  2014-12-11 12:55:53
+[11/Dec/2014:13:10:53]  2014-12-11 13:10:53
+[11/Dec/2014:13:11:02]  2014-12-11 12:55:51
+[11/Dec/2014:13:11:02]  2014-12-11 13:10:51
+[11/Dec/2014:13:11:05]  2014-12-11 12:55:51
+[11/Dec/2014:13:11:05]  2014-12-11 13:10:51
+[11/Dec/2014:13:11:09]  2014-12-11 12:56:09
+[11/Dec/2014:13:11:09]  2014-12-11 13:11:09
+[11/Dec/2014:13:11:14]  2014-12-11 12:56:08
+[11/Dec/2014:13:11:14]  2014-12-11 13:11:08
+[11/Dec/2014:13:11:18]  2014-12-11 12:56:18
+[11/Dec/2014:13:11:18]  2014-12-11 13:11:18
+[11/Dec/2014:13:11:23]  2014-12-11 12:56:16
+[11/Dec/2014:13:11:23]  2014-12-11 13:11:16
+[11/Dec/2014:13:11:26]  2014-12-11 12:56:16
+[11/Dec/2014:13:11:26]  2014-12-11 13:11:16
+[11/Dec/2014:13:11:34]  2014-12-11 12:56:34
+[11/Dec/2014:13:11:34]  2014-12-11 13:11:34
+[11/Dec/2014:13:11:59]  2014-12-11 12:56:59
+[11/Dec/2014:13:11:59]  2014-12-11 13:11:59
+[11/Dec/2014:13:12:13]  2014-12-11 12:57:13
+[11/Dec/2014:13:12:13]  2014-12-11 13:12:13
+[11/Dec/2014:13:12:19]  2014-12-11 12:57:11
+[11/Dec/2014:13:12:19]  2014-12-11 13:12:11
+[11/Dec/2014:13:12:30]  2014-12-11 12:57:30
+[11/Dec/2014:13:12:30]  2014-12-11 13:12:30
+[11/Dec/2014:14:02:09] ENGINE Bus STOPPING
+[11/Dec/2014:14:02:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:14:02:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:14:02:09] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:14:02:09] ENGINE Bus STOPPED
+[11/Dec/2014:14:02:09] ENGINE Bus EXITING
+[11/Dec/2014:14:02:09] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:14:02:09] ENGINE Bus EXITED
+[11/Dec/2014:14:02:12] ENGINE Bus STARTING
+[11/Dec/2014:14:02:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:14:02:12] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:14:02:12] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:14:02:12] ENGINE Bus STARTED
+[11/Dec/2014:15:19:56] ENGINE Bus STOPPING
+[11/Dec/2014:15:19:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:19:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:19:56] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:19:56] ENGINE Bus STOPPED
+[11/Dec/2014:15:19:56] ENGINE Bus EXITING
+[11/Dec/2014:15:19:56] ENGINE Bus EXITED
+[11/Dec/2014:15:20:00] ENGINE Bus STARTING
+[11/Dec/2014:15:20:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:20:01] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:20:01] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:20:01] ENGINE Bus STARTED
+[11/Dec/2014:15:20:07] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 24, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 26, in get_hitsgraph
+    log.error(hour_diff)
+  File "C:\Python34\lib\site-packages\cherrypy\_cplogging.py", line 214, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)))
+TypeError: sequence item 2: expected str instance, float found
+
+[11/Dec/2014:15:20:34] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 24, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 26, in get_hitsgraph
+    log.error(hour_diff)
+  File "C:\Python34\lib\site-packages\cherrypy\_cplogging.py", line 214, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)))
+TypeError: sequence item 2: expected str instance, float found
+
+[11/Dec/2014:15:20:52]  2014-12-11 15:05:52
+[11/Dec/2014:15:20:52]  2014-12-11 15:20:52
+[11/Dec/2014:15:21:00]  2014-12-11 13:20:50
+[11/Dec/2014:15:21:00]  2014-12-11 15:20:50
+[11/Dec/2014:15:21:05] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 24, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 26, in get_hitsgraph
+    log.error(hour_diff)
+  File "C:\Python34\lib\site-packages\cherrypy\_cplogging.py", line 214, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)))
+TypeError: sequence item 2: expected str instance, float found
+
+[11/Dec/2014:15:21:21] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 24, in hits
+    return graph.Graph.get_hitsgraph(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 26, in get_hitsgraph
+    log.error(hour_diff)
+  File "C:\Python34\lib\site-packages\cherrypy\_cplogging.py", line 214, in error
+    self.error_log.log(severity, ' '.join((self.time(), context, msg)))
+TypeError: sequence item 2: expected str instance, float found
+
+[11/Dec/2014:15:23:11] ENGINE Bus STOPPING
+[11/Dec/2014:15:23:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:23:12] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:23:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:23:12] ENGINE Bus STOPPED
+[11/Dec/2014:15:23:12] ENGINE Bus EXITING
+[11/Dec/2014:15:23:12] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:23:12] ENGINE Bus EXITED
+[11/Dec/2014:15:23:15] ENGINE Bus STARTING
+[11/Dec/2014:15:23:15] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:23:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:23:15] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:23:15] ENGINE Bus STARTED
+[11/Dec/2014:15:23:19]  0.25
+[11/Dec/2014:15:23:26]  168.0
+[11/Dec/2014:15:28:17]  0.25
+[11/Dec/2014:15:28:19] ENGINE Bus STOPPING
+[11/Dec/2014:15:28:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:28:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:28:29] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:28:29] ENGINE Bus STOPPED
+[11/Dec/2014:15:28:29] ENGINE Bus EXITING
+[11/Dec/2014:15:28:29] ENGINE Bus EXITED
+[11/Dec/2014:15:28:29] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:28:35] ENGINE Bus STARTING
+[11/Dec/2014:15:28:35] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:28:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:28:35] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:28:35] ENGINE Bus STARTED
+[11/Dec/2014:15:28:39]  0.25
+[11/Dec/2014:15:28:43]  0.25
+[11/Dec/2014:15:28:45]  1.0
+[11/Dec/2014:15:28:48]  0.25
+[11/Dec/2014:15:28:51]  1.0
+[11/Dec/2014:15:28:53]  2.0
+[11/Dec/2014:15:28:57]  3.0
+[11/Dec/2014:15:29:00]  4.0
+[11/Dec/2014:15:29:06]  6.0
+[11/Dec/2014:15:29:11]  12.0
+[11/Dec/2014:15:29:15]  24.0
+[11/Dec/2014:15:29:20]  15.476944444444445
+[11/Dec/2014:15:29:24]  168.0
+[11/Dec/2014:15:30:24]  0.25
+[11/Dec/2014:15:30:27]  1.0
+[11/Dec/2014:15:30:31]  24.0
+[11/Dec/2014:15:30:50]  0.25
+[11/Dec/2014:15:30:54]  24.0
+[11/Dec/2014:15:31:41]  0.25
+[11/Dec/2014:15:31:44]  1.0
+[11/Dec/2014:15:31:47]  2.0
+[11/Dec/2014:15:31:49]  3.0
+[11/Dec/2014:15:31:52]  4.0
+[11/Dec/2014:15:31:57]  6.0
+[11/Dec/2014:15:32:07]  12.0
+[11/Dec/2014:15:32:12]  24.0
+[11/Dec/2014:15:32:19]  15.5275
+[11/Dec/2014:15:32:29]  168.0
+[11/Dec/2014:15:32:55]  336.0
+[11/Dec/2014:15:34:26] ENGINE Bus STOPPING
+[11/Dec/2014:15:34:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:34:26] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:34:26] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:34:26] ENGINE Bus STOPPED
+[11/Dec/2014:15:34:26] ENGINE Bus EXITING
+[11/Dec/2014:15:34:26] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:34:26] ENGINE Bus EXITED
+[11/Dec/2014:15:34:30] ENGINE Bus STARTING
+[11/Dec/2014:15:34:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:34:30] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:34:30] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:34:30] ENGINE Bus STARTED
+[11/Dec/2014:15:34:33]  0.25
+[11/Dec/2014:15:34:37]  2.0
+[11/Dec/2014:15:34:49]  3.0
+[11/Dec/2014:15:35:13]  24.0
+[11/Dec/2014:15:35:18]  15.575277777777778
+[11/Dec/2014:15:35:22]  168.0
+[11/Dec/2014:15:35:43]  336.0
+[11/Dec/2014:15:39:31]  0.25
+[11/Dec/2014:15:40:28] ENGINE Bus STOPPING
+[11/Dec/2014:15:40:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:40:29] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:40:29] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:40:29] ENGINE Bus STOPPED
+[11/Dec/2014:15:40:29] ENGINE Bus EXITING
+[11/Dec/2014:15:40:29] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:40:29] ENGINE Bus EXITED
+[11/Dec/2014:15:40:32] ENGINE Bus STARTING
+[11/Dec/2014:15:40:32] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:40:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:40:32] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:40:32] ENGINE Bus STARTED
+[11/Dec/2014:15:43:17]  0.25
+[11/Dec/2014:15:43:25]  0.25
+[11/Dec/2014:15:43:29]  0.25
+[11/Dec/2014:15:43:38]  3.0
+[11/Dec/2014:15:43:38] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 79, in responsetime
+    return graph.Graph.get_responsetime(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 213, in get_responsetime
+    responce_time.append(server[0])
+NameError: name 'responce_time' is not defined
+
+[11/Dec/2014:15:43:46]  4.0
+[11/Dec/2014:15:43:46] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 79, in responsetime
+    return graph.Graph.get_responsetime(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 213, in get_responsetime
+    responce_time.append(server[0])
+NameError: name 'responce_time' is not defined
+
+[11/Dec/2014:15:43:54]  0.25
+[11/Dec/2014:15:48:52]  0.25
+[11/Dec/2014:15:50:05]  2.0
+[11/Dec/2014:15:50:06] HTTP Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\cherrypy\_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "C:\Python34\lib\site-packages\cherrypy\lib\encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\lib\jsontools.py", line 63, in json_handler
+    value = cherrypy.serving.request._json_inner_handler(*args, **kwargs)
+  File "C:\Python34\lib\site-packages\cherrypy\_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "C:\Users\vbalaud\Documents\memdash\controller\graph.py", line 79, in responsetime
+    return graph.Graph.get_responsetime(server, startdate, enddate)
+  File "C:\Users\vbalaud\Documents\memdash\model\graph.py", line 213, in get_responsetime
+    responce_time.append(server[0])
+NameError: name 'responce_time' is not defined
+
+[11/Dec/2014:15:51:06] ENGINE Bus STOPPING
+[11/Dec/2014:15:51:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:51:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:51:06] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:51:06] ENGINE Bus STOPPED
+[11/Dec/2014:15:51:06] ENGINE Bus EXITING
+[11/Dec/2014:15:51:06] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:51:06] ENGINE Bus EXITED
+[11/Dec/2014:15:51:07] ENGINE Bus STARTING
+[11/Dec/2014:15:51:07] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:51:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:51:07] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:51:07] ENGINE Bus STARTED
+[11/Dec/2014:15:51:11] ENGINE Bus STOPPING
+[11/Dec/2014:15:51:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:15:51:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:15:51:11] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:15:51:11] ENGINE Bus STOPPED
+[11/Dec/2014:15:51:11] ENGINE Bus EXITING
+[11/Dec/2014:15:51:11] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:15:51:11] ENGINE Bus EXITED
+[11/Dec/2014:15:51:15] ENGINE Bus STARTING
+[11/Dec/2014:15:51:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:15:51:15] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:15:51:15] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:15:51:15] ENGINE Bus STARTED
+[11/Dec/2014:15:51:18]  0.25
+[11/Dec/2014:15:51:21]  2.0
+[11/Dec/2014:15:51:31]  1.0
+[11/Dec/2014:15:52:17]  0.25
+[11/Dec/2014:15:52:21]  168.0
+[11/Dec/2014:15:52:31]  4.0
+[11/Dec/2014:15:53:43]  0.25
+[11/Dec/2014:15:53:53]  12.0
+[11/Dec/2014:15:54:05]  336.0
+[11/Dec/2014:15:54:23]  4.0
+[11/Dec/2014:15:54:32]  168.0
+[11/Dec/2014:15:57:02]  0.25
+[11/Dec/2014:15:57:06]  6.0
+[11/Dec/2014:15:57:12]  168.0
+[11/Dec/2014:15:57:20]  2.0
+[11/Dec/2014:16:02:01]  0.25
+[11/Dec/2014:16:07:01]  0.25
+[11/Dec/2014:16:12:01]  0.25
+[11/Dec/2014:16:17:01]  0.25
+[11/Dec/2014:16:22:01]  0.25
+[11/Dec/2014:16:27:01]  0.25
+[11/Dec/2014:16:32:01]  0.25
+[11/Dec/2014:16:37:01]  0.25
+[11/Dec/2014:16:42:01]  0.25
+[11/Dec/2014:16:47:01]  0.25
+[11/Dec/2014:16:52:01]  0.25
+[11/Dec/2014:17:03:30]  0.25
+[11/Dec/2014:17:04:18]  0.25
+[11/Dec/2014:17:07:46]  0.25
+[11/Dec/2014:17:09:38]  0.25
+[11/Dec/2014:17:09:52]  0.25
+[11/Dec/2014:17:09:55]  0.25
+[11/Dec/2014:17:09:57]  0.25
+[11/Dec/2014:17:09:59]  0.25
+[11/Dec/2014:17:10:01]  0.25
+[11/Dec/2014:17:10:02]  0.25
+[11/Dec/2014:17:10:04]  0.25
+[11/Dec/2014:17:10:09]  0.25
+[11/Dec/2014:17:10:16]  1.0
+[11/Dec/2014:17:10:23]  2.0
+[11/Dec/2014:17:10:52]  0.25
+[11/Dec/2014:17:11:00]  3.0
+[11/Dec/2014:17:11:06]  1.0
+[11/Dec/2014:17:11:19]  0.25
+[11/Dec/2014:17:11:25]  1.0
+[11/Dec/2014:17:11:44]  720.0
+[11/Dec/2014:17:12:00]  0.25
+[11/Dec/2014:17:12:02]  0.25
+[11/Dec/2014:17:12:08]  2184.0
+[11/Dec/2014:17:14:39] ENGINE Bus STOPPING
+[11/Dec/2014:17:14:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8989)) shut down
+[11/Dec/2014:17:14:39] ENGINE Stopped thread 'Monitor'.
+[11/Dec/2014:17:14:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Dec/2014:17:14:39] ENGINE Bus STOPPED
+[11/Dec/2014:17:14:39] ENGINE Bus EXITING
+[11/Dec/2014:17:14:39] ENGINE Bus EXITED
+[11/Dec/2014:17:14:39] ENGINE Waiting for child threads to terminate...
+[11/Dec/2014:17:14:42] ENGINE Bus STARTING
+[11/Dec/2014:17:14:42] ENGINE Started monitor thread 'Monitor'.
+[11/Dec/2014:17:14:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Dec/2014:17:14:43] ENGINE Serving on http://0.0.0.0:8989
+[11/Dec/2014:17:14:43] ENGINE Bus STARTED
+[11/Dec/2014:17:14:46]  0.25
+[11/Dec/2014:17:14:51]  3.0
+[11/Dec/2014:17:15:00]  6.0
+[11/Dec/2014:17:15:11]  168.0
+[11/Dec/2014:17:16:44]  0.25
+[11/Dec/2014:17:16:49]  1.0
+[11/Dec/2014:17:16:52]  2.0
+[11/Dec/2014:17:16:55]  3.0
+[11/Dec/2014:17:16:58]  4.0
+[11/Dec/2014:17:17:01]  6.0
+[11/Dec/2014:17:17:17]  12.0
+[11/Dec/2014:17:17:30]  24.0
+[11/Dec/2014:17:17:41]  17.27861111111111
+[11/Dec/2014:17:17:46]  168.0
+[11/Dec/2014:17:18:00]  0.25
+[11/Dec/2014:17:18:06]  168.0
+[11/Dec/2014:17:18:18]  0.25
+[11/Dec/2014:17:18:22]  168.0
+[11/Dec/2014:17:18:57]  0.25
+[11/Dec/2014:17:19:01]  0.25
+[11/Dec/2014:17:19:03]  0.25
+[11/Dec/2014:17:19:40]  0.25
+[11/Dec/2014:17:20:17]  0.25
+[11/Dec/2014:17:20:20]  0.25
+[11/Dec/2014:17:20:21]  0.25
+[11/Dec/2014:17:20:23]  0.25
+[11/Dec/2014:17:21:55]  0.25
+[11/Dec/2014:17:22:00]  17.365
+[11/Dec/2014:17:22:04]  4392.0
+[11/Dec/2014:17:23:11]  0.25
+[11/Dec/2014:17:32:05]  0.25
+[11/Dec/2014:17:34:47]  0.25
+[11/Dec/2014:17:34:54]  17.579166666666666
+[11/Dec/2014:17:35:35]  8760.0
+[11/Dec/2014:17:35:50]  0.25
+[11/Dec/2014:17:35:54]  1.0
+[11/Dec/2014:17:35:57]  3.0
+[11/Dec/2014:17:36:00]  6.0
+[11/Dec/2014:17:36:04]  24.0
+[11/Dec/2014:17:36:08]  17.579166666666666
+[11/Dec/2014:17:36:27]  168.0
+[11/Dec/2014:17:36:30]  8760.0
+[11/Dec/2014:17:36:34]  0.25
+[11/Dec/2014:17:36:36]  0.25
+[11/Dec/2014:17:36:38]  0.25
+[11/Dec/2014:17:36:39]  0.25
+[11/Dec/2014:17:36:41]  0.25
+[11/Dec/2014:17:36:44]  0.25
+[11/Dec/2014:17:37:35]  0.25
+[11/Dec/2014:17:40:24]  0.25
+[11/Dec/2014:17:40:28]  0.25
+[11/Dec/2014:17:40:32]  0.25
+[11/Dec/2014:17:40:35]  0.25
+[11/Dec/2014:17:40:36]  0.25
+[11/Dec/2014:17:40:39]  0.25
+[11/Dec/2014:17:40:40]  0.25
+[11/Dec/2014:17:40:42]  0.25
+[11/Dec/2014:17:40:43]  0.25
+[11/Dec/2014:17:40:48]  0.25
+[11/Dec/2014:17:40:52]  0.25
+[11/Dec/2014:17:40:53]  0.25
+[11/Dec/2014:17:41:30]  0.25
+[11/Dec/2014:17:41:46]  0.25
+[11/Dec/2014:17:41:49]  6.0
+[11/Dec/2014:17:41:56]  168.0
+[11/Dec/2014:17:42:01]  0.25
+[11/Dec/2014:17:42:05]  0.25
+[11/Dec/2014:17:42:07]  0.25
+[11/Dec/2014:17:44:28]  0.25
+[11/Dec/2014:17:45:39]  0.25
+[11/Dec/2014:17:45:42]  0.25
+[11/Dec/2014:17:45:44]  0.25
+[11/Dec/2014:17:46:05]  0.25
+[11/Dec/2014:17:53:04]  0.25
+[11/Dec/2014:17:53:07]  0.25
+[11/Dec/2014:17:53:10]  0.25
+[11/Dec/2014:17:53:13]  0.25
+[11/Dec/2014:17:53:14]  0.25
+[11/Dec/2014:17:53:16]  0.25
+[11/Dec/2014:17:53:19]  0.25
+[11/Dec/2014:17:53:41]  0.25
+[11/Dec/2014:17:53:52]  0.25
+[11/Dec/2014:17:53:55]  0.25
+[11/Dec/2014:17:53:58]  0.25
+[11/Dec/2014:17:54:30]  0.25
+[11/Dec/2014:17:56:14]  0.25
+[11/Dec/2014:18:00:34]  0.25
+[11/Dec/2014:18:00:40]  1.0
+[11/Dec/2014:18:00:42]  0.25
+[11/Dec/2014:18:00:46]  336.0
+[11/Dec/2014:18:00:49]  8760.0
+[11/Dec/2014:18:01:14]  0.25
+[11/Dec/2014:18:01:15]  0.25
+[11/Dec/2014:18:01:19]  0.25
+[11/Dec/2014:18:01:36]  0.25

@@ -4,4 +4,4 @@ class Config(object):
     DB_USER = 'root'
     DB_PASSWORD = 'mariadb'
     
-    DE_FREQUENCY = 30
+    DE_FREQUENCY = 300

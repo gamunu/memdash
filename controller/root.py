@@ -280,7 +280,7 @@ class Root(object):
 
         pattern_obj = re.compile('\\s\\(\\d\\)')
         for server in s_stats:
-            server_name = server[0].decode(encoding="ascii")
+            server_name = server[0].decode(encoding="utf-8")
             server_name = pattern_obj.sub('', server_name)
             online_servers.append(server_name)
 

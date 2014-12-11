@@ -5,16 +5,16 @@ html {
 
 body {
   margin-bottom: 60px;
-  margin-top: 70px;
+  margin-top: 44px;
+  background: #D8D8D8;
 }
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   height: 60px;
-  background-color: #f5f5f5;
-  border-top: 2px solid #CCC;
+  background-color: #313A49;
 }
 
 .container .text-muted {
@@ -74,24 +74,16 @@ a a:hover, a:active, a:focus {
     color: #7CFC00;
 }
 
+
+/* sidebar */
+.sidebar {
+  padding: 30px 0px 0px 0px;
+}
 .nav-pills > li > a {
-    padding: 15px;
-    color: #768399;
-    background: #F3F5F6;
-    transition: #000 0.4s ease 0s;
+   border-radius: 0px;
     word-wrap: break-word;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    border-radius: 0px;
-    background: #EEE;
-    color: #768399;
-    font-weight: 700;
-    border-top: 1px solid #D4D4D4;
-    border-bottom: 1px solid #D4D4D4;
-    border-left: 0px;
-    border-right: 0px;
-}
 
 .op-teal {
     background-color: rgba(68, 141, 124, 0.25);
@@ -135,8 +127,9 @@ a a:hover, a:active, a:focus {
 }
 
 .general-stats{
-  background-color: #F5F5F5;
+  background-color: #E1E1E1;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .detail-stats {
@@ -190,7 +183,7 @@ a a:hover, a:active, a:focus {
   z-index: 2000;
   top: 0;
   left: 0;
-  height: 2px;
+  height: 5px;
 
   -webkit-transition: width 1s;
   -moz-transition: width 1s;
@@ -219,9 +212,9 @@ a a:hover, a:active, a:focus {
   z-index: 2000;
   top: 15px;
   right: 15px;
-  width: 14px;
-  height: 14px;
-  border: solid 2px transparent;
+  width: 20px;
+  height: 20px;
+  border: solid 5px transparent;
   border-top-color: #29d;
   border-left-color: #29d;
   border-radius: 10px;
@@ -266,15 +259,18 @@ a a:hover, a:active, a:focus {
  }
 
 .breadcrumb {
-    padding: 8px 15px 0px 15px;
+    padding: 5px 0px 5px 0px;
     margin-bottom: 0px;
+    background: transparent;
 }
-
-.server-onoff .col-md-2.online {
+.server-onoff .col-md-2 p{
+  padding: 10px;
+}
+.server-onoff .col-md-2 .online {
     background: #A2FEA0;
 }
 
-.server-onoff .col-md-2.offline {
+.server-onoff .col-md-2 .offline {
     background: rgba(254, 187, 160, 1);
 }
 
@@ -287,12 +283,12 @@ a a:hover, a:active, a:focus {
   margin-left: 4.333%;
 }
 
-.timer span{
-  font-weight: bold;
+.timer {
+  padding: 5px 0px 0px;
 }
 
 /* Charts */
-.chart-wrapper {
+.chart-row {
   background: none repeat scroll 0% 0% #DEDEDE;
   padding: 30px;
   margin-top: 2px solid #D8D8D8;
@@ -307,9 +303,8 @@ a a:hover, a:active, a:focus {
   text-indent: 16px;
   line-height: 24px;
   position: relative;
-  font-weight: 200;
+  font-weight: bold;
   display: block;
-  float: left;
   width: 50%;
   font-size: 0.8em;
 }
@@ -332,4 +327,7 @@ a a:hover, a:active, a:focus {
 .stat-label {
   font-size: 2.5em;
   display: block;
+}
+.general-stats > div:nth-child(3) {
+  padding-top: 15px;
 }

@@ -3,7 +3,9 @@
 
 import controller
 from timeit import Timer
-from model.mdatabase import MDatabase
+from model.root import Root
+from model.graph import Graph
+from controller.memcache import Client as MClient
 import time
 
 
@@ -18,7 +20,7 @@ class Daemon(object):
 
     def execute(self):
         ''' Run in the background '''
-        for server in MDatabase.get_servers():
+        for server in Root.get_servers():
             print(server)
             if self.fetch(server[0], server[1]):
                 if server[1] in self.stats_old:
@@ -40,9 +42,9 @@ class Daemon(object):
 
         time_elapsed = 0
         timer = Timer(mem_client.get_stats)
-        
+
         stats = mem_client.get_stats()
-        #Messure the response time
+        # Messure the response time
         time_elapsed = timer.timeit(1)
 
         if len(stats) > 0:
@@ -56,14 +58,20 @@ class Daemon(object):
         '''Extract curretn values'''
         status_loc = {}
         print('Extracting {}'.format(sid))
-        status_loc['get_hits'] = int(self.stats_current[sid]['get_hits']) - int(self.stats_old[sid]['get_hits'])
-        status_loc['get_misses'] = int(self.stats_current[sid]['get_misses']) - int(self.stats_old[sid]['get_misses'])
-        status_loc['cmd_get'] = int(self.stats_current[sid]['cmd_get']) - int(self.stats_old[sid]['cmd_get'])
-        status_loc['cmd_set'] = int(self.stats_current[sid]['cmd_set']) - int(self.stats_old[sid]['cmd_set'])
+
+        # get hits
+        status_loc['get_hits'] = int(self.stats_current[sid]['get_hits'])    
+        # get misses
+        status_loc['get_misses'] = int(self.stats_current[sid]['get_misses'])    
+        # cmd get
+        status_loc['cmd_get'] = int(self.stats_current[sid]['cmd_get'])    
+        # cmd_set
+        status_loc['cmd_set'] = int(self.stats_current[sid]['cmd_set'])
+
         status_loc['curr_items'] = int(self.stats_current[sid]['curr_items'])
-        status_loc['response_time'] = round(self.stats_current[sid]['response_time'], 5)
+        status_loc['response_time'] = round(self.stats_current[sid]['response_time'], 5) * 1000
         status_loc['bytes'] = round(int(self.stats_current[sid]['bytes'])/(1024*1024), 2)
-        
+
         self.stats_new[sid] = status_loc
 
     def insert_records(self):
@@ -71,4 +79,4 @@ class Daemon(object):
 
         for stats in self.stats_new:
             s_stat = self.stats_new[stats]
-            MDatabase.insert_statistic(stats, s_stat)
+            Graph.insert_statistic(stats, s_stat)

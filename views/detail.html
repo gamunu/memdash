@@ -2,10 +2,10 @@
 {% block title %}
     {{ title }}
 {% endblock %}
-{% block body %}
 {% block navigation %}
     {{ nav }}
 {% endblock %}
+{% block body %}
 <!-- layout -->
 <div id="layout" class="container-fluid">
     <div class="row">
@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="stats-title">localhost:11211</h2>
+                <div class="col-md-12 stats-title">
+                    <h2>localhost:11211</h2>
                 </div>
             </div>
             
@@ -37,35 +37,52 @@
             <div class="row"><div class="col-md-12 general-stats"></div></div>
             
             <!-- graph status -->
-            <div class="row">
+            <div class="row chart-row">
+                <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                    <span></span> <b class="caret"></b>
+                </div>
                 <div class="col-md-12 chart-wrapper">
                     <div class="row">
                         <div class="col-md-6">
+                            <h5>Hits And Misses</h5>
                             <canvas id="hits-misses"></canvas>
                             <ul class="chart-legend">
-                                <li class="hits">Hits/min</li>
-                                <li class="misses">Missesmin</li>
+                                <li class="hits">Hits</li>
+                                <li class="misses">Misses</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
+                            <h5>Get and Set</h5>
                             <canvas id="graph-cmds"></canvas>
                             <ul class="chart-legend">
-                                <li class="get">Get/min</li>
-                                <li class="set">Set/min</li>
+                                <li class="get">Get</li>
+                                <li class="set">Set</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
+                            <h5>Cached Items</h5>
                             <canvas id="graph-cacheditems"></canvas>
                             <ul class="chart-legend">
                                 <li class="cached">Cached Items</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
+                            <h5>Memory Utilization</h5>
                             <canvas id="graph-memory"></canvas>
                             <ul class="chart-legend">
                                 <li class="memory">Memory Utilization </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Response Time</h5>
+                            <canvas id="graph-response"></canvas>
+                            <ul class="chart-legend">
+                                <li class="response">Response Time</li>
                             </ul>
                         </div>
                     </div>
@@ -190,6 +207,8 @@
 {% endblock %}
 {% block fscript %}
     {{ super() }}
-    <script src="static/js/detail.min.js"></script>
     <script src="static/js/chart.min.js"></script>
+    <script type="text/javascript" src="static/js/moment.min.js"></script>
+    <script type="text/javascript" src="static/js/daterangepicker.js"></script>
+    <script src="static/js/detail.min.js"></script>
 {% endblock %}

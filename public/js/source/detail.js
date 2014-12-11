@@ -39,6 +39,8 @@ function fetchData(url) {
     
     $.get('stats', { server : url }, function (data) {
             $genaral.html(data);
+            $('.chart-row').fadeOut('slow');
+            $('.detail-stats').fadeOut('slow');
         });
     
     requests.genaral = $.get('statst', { server : url },
