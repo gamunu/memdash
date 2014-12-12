@@ -1,15 +1,17 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert, Chart*/
+/*global $, jQuery, alert, Chart, moment*/
 window.alert = function (text) {
     'use strict';
     console.log('tried to alert: ' + text);
     return true;
 };
 
-Chart.defaults.global.scaleFontFamily = "'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
-Chart.defaults.global.scaleFontStyle = "500";
-Chart.defaults.global.scaleFontSize = 14;
-Chart.defaults.global.scaleFontColor = "#555";
+Chart.defaults.Line.scaleFontFamily = "'Raleway'";
+Chart.defaults.Line.scaleFontStyle = "500";
+Chart.defaults.Line.scaleFontSize = 14;
+Chart.defaults.Line.scaleFontColor = "#555";
+Chart.defaults.Line.responsive = true;
+Chart.defaults.Line.pointDotRadius = 2;
 
 var Memdash = {
     genaral: $('.general-stats'),
@@ -27,12 +29,19 @@ var Memdash = {
     refresh_time: $('#refresh-time'),
     timer: 0,
     
+    //graphs dom
+    $graph_hits: $("#hits-misses"),
+    $graph_cmds: $("#graph-cmds"),
+    $graph_cache: $("#graph-cacheditems"),
+    $graph_memory: $("#graph-memory"),
+    
     changeGraphToDate: function (start, end) {
         'use strict';
-        Memdash.graphmemory.destroy();
-        Memdash.cacheditems.destroy();
-        Memdash.gcmds.destroy();
-        Memdash.ghits.destroy();
+        var self = this;
+        this.graphmemory.destroy();
+        this.cacheditems.destroy();
+        this.gcmds.destroy();
+        this.ghits.destroy();
         
         $.get('graph/ovhits',
               {
@@ -40,17 +49,13 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById("hits-misses").getContext("2d");
-                Memdash.ghits = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-                
+                var ctx = self.$graph_hits.get(0).getContext("2d");
+                self.ghits = new Chart(ctx).Line(data);
                 if (data.labels.length > 0) {
-                    $('#hits-misses').hide().fadeIn('slow');
+                    self.$graph_hits.hide().fadeIn('slow');
                 }
                 else {
-                    $('#hits-misses').hide();
+                    self.$graph_hits.hide();
                 }
             });
         
@@ -60,17 +65,13 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-cmds').getContext('2d');
-                Memdash.gcmds = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
+                var ctx = self.$graph_cmds.get(0).getContext("2d");
+                self.gcmds = new Chart(ctx).Line(data);
                 if (data.labels.length > 0) {
-                    $('#graph-cmds').hide().fadeIn('slow');
-                    
+                    self.$graph_cmds.hide().fadeIn('slow');
                 }
                 else {
-                    $('#graph-cmds').hide();
+                    self.$graph_cmds.hide();
                 }
             });
         
@@ -80,16 +81,13 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-cacheditems').getContext('2d');
-                Memdash.cacheditems = new Chart(ctx).Line(data, {
-                        responsive: true,
-                        pointDotRadius : 1
-                    });
+                var ctx = self.$graph_cache.get(0).getContext("2d");
+                self.cacheditems = new Chart(ctx).Line(data);
                 if (data.labels.length > 0) {
-                    $('#graph-cacheditems').hide().fadeIn('slow');
+                    self.$graph_cache.hide().fadeIn('slow');
                 }
                 else {
-                    $('#graph-cacheditems').hide();
+                    self.$graph_cache.hide();
                 }
             });
         
@@ -99,22 +97,20 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-memory').getContext('2d');
-                Memdash.graphmemory = new Chart(ctx).Line(data, {
-                        responsive: true,
-                        pointDotRadius : 1
-                    });
+                var ctx = self.$graph_memory.get(0).getContext("2d");
+                self.graphmemory = new Chart(ctx).Line(data);
                 if (data.labels.length > 0) {
-                    $('#graph-memory').hide().fadeIn('slow');
+                    self.$graph_memory.hide().fadeIn('slow');
                 }
                 else {
-                    $('#graph-memory').hide();
+                    self.$graph_memory.hide();
                 }
             });
     },
     
     initDataTables: function () {
         'use strict';
+        var self = this;
         //connect to the server before getting informaton
         //stats tab
         //Get generatl stats
@@ -126,67 +122,54 @@ var Memdash = {
     
             $.get('service', function (data) {
                 //fill stats table
-                Memdash.statics_table = $('#global-statics-table').dataTable({
+                self.statics_table = $('#global-statics-table').dataTable({
                     'data' : data.data
                 });
-                Memdash.genaral.html(data.overall);
+                self.genaral.html(data.overall);
             });
         });
         
         $.get('graph/ovhits', function (data) {
-            var ctx = document.getElementById("hits-misses").getContext("2d");
-            Memdash.ghits = new Chart(ctx).Line(data, {
-                responsive: true,
-                pointDotRadius : 1
-            });
+            var ctx = self.$graph_hits.get(0).getContext("2d");
+            self.ghits = new Chart(ctx).Line(data);
             if (data.labels.length > 0) {
-                $('#hits-misses').hide().fadeIn('slow');
+                self.$graph_hits.hide().fadeIn('slow');
             }
             else {
-                $('#hits-misses').hide();
+                self.$graph_hits.hide();
             }
         });
         
         $.get('graph/ovcmds', function (data) {
-            var ctx = document.getElementById('graph-cmds').getContext('2d');
-            Memdash.gcmds = new Chart(ctx).Line(data, {
-                responsive: true,
-                pointDotRadius : 1
-            });
+            var ctx = self.$graph_cmds.get(0).getContext("2d");
+            self.gcmds = new Chart(ctx).Line(data);
             if (data.labels.length > 0) {
-                $('#graph-cmds').hide().fadeIn('slow');
-                
+                self.$graph_cmds.hide().fadeIn('slow');
             }
             else {
-                $('#graph-cmds').hide();
+                self.$graph_cmds.hide();
             }
         });
         
         $.get('graph/ovcacheditems', function (data) {
-            var ctx = document.getElementById('graph-cacheditems').getContext('2d');
-            Memdash.cacheditems = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
+            var ctx = self.$graph_cache.get(0).getContext("2d");
+            self.cacheditems = new Chart(ctx).Line(data);
             if (data.labels.length > 0) {
-                $('#graph-cacheditems').hide().fadeIn('slow');
+                self.$graph_cache.hide().fadeIn('slow');
             }
             else {
-                $('#graph-cacheditems').hide();
+                self.$graph_cache.hide();
             }
         });
         
         $.get('graph/ovmemory', function (data) {
-            var ctx = document.getElementById('graph-memory').getContext('2d');
-            Memdash.graphmemory = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
+            var ctx = self.$graph_memory.get(0).getContext("2d");
+            self.graphmemory = new Chart(ctx).Line(data);
             if (data.labels.length > 0) {
-                $('#graph-memory').hide().fadeIn('slow');
+                self.$graph_memory.hide().fadeIn('slow');
             }
             else {
-                $('#graph-memory').hide();
+                self.$graph_memory.hide();
             }
         });
     }

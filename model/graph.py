@@ -215,7 +215,7 @@ class Graph(object):
                 
         datasets.append({'data' : response_time,
                          'label': 'Response Time',
-                         'fillColor' : '#804801',
+                         'fillColor' : '#E86B58',
                          'strokeColor' : 'rgba(220,220,220,1)',
                          'pointColor' : 'rgba(220,220,220,1)',
                          'pointStrokeColor' : '#fff',

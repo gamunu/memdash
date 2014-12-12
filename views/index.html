@@ -26,53 +26,45 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h2>Servers</h2>
-                        </div>
-                        <div class="col-md-12">
                             <div class="row server-onoff"></div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-12">
                             <h2>Overall Statistics</h2>
                         </div>
-                        <div class="col-md-12 general-stats"></div> 
-                    </div>
-                    <!-- graph status -->
-                    <div class="row">
+                        <div class="col-md-12 general-stats"></div>
+                        <!-- graph status -->
                         <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                             <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
                             <span></span> <b class="caret"></b>
                         </div>
                         <div class="col-md-12 chart-wrapper">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h5>Hits And Misses</h5>
-                                    <canvas id="hits-misses"></canvas>
+                                <div class="col-md-10 col-md-offset-1">
+                                    <h4>Hits And Misses</h5>
+                                    <canvas id="hits-misses" height="90px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="hits">Hits</li>
                                         <li class="misses">Misses</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-10 col-md-offset-1">
                                     <h5>Get and Set</h5>
-                                    <canvas id="graph-cmds"></canvas>
+                                    <canvas id="graph-cmds" height="90px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="get">Get</li>
                                         <li class="set">Set</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-10 col-md-offset-1">
                                     <h5>Cached Items</h5>
-                                    <canvas id="graph-cacheditems"></canvas>
+                                    <canvas id="graph-cacheditems" height="90px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="cached">Cached Items</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-10 col-md-offset-1">
                                     <h5>Memory Utilization</h5>
-                                    <canvas id="graph-memory"></canvas>
+                                    <canvas id="graph-memory" height="90px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="memory">Memory Utilization </li>
                                     </ul>
@@ -119,8 +111,8 @@
 {% endblock %}
 {% block fscript %}
     {{ super() }}
-    <script src="static/js/chart.min.js"></script>
-    <script type="text/javascript" src="static/js/moment.min.js"></script>
+    <script src="static/js/chart.js"></script>
+    <script type="text/javascript" src="static/js/moment.js"></script>
     <script type="text/javascript" src="static/js/daterangepicker.js"></script>
-    <script src="static/js/home.min.js"></script>
+    <script src="static/js/home.js"></script>
 {% endblock %}

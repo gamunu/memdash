@@ -7,11 +7,16 @@ body {
   margin-bottom: 60px;
   margin-top: 44px;
   background: #D8D8D8;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
+/* footer styles */
 .footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 60px;
   background-color: #313A49;
@@ -21,109 +26,63 @@ body {
   margin: 20px 0;
 }
 
-a a:hover, a:active, a:focus {
-  outline: 0;
-}
-
+/* end footer styles */
 .progress-sm {
-    height: 8px;
+    height: 15px;
 }
 
-#load {
-    position: absolute;
-    width: 100%;
-    z-index: 501;
-    background: #2672EC;
-    padding: 40px 50px 10px 50px;
-    display: none;
-    top: 30%;
+/* sidebar */
+.sidebar {
+  padding: 0;
 }
-#load img {
-    position: relative;
-    opacity: 1;
-    z-index: 541;
-    height: 128px;
-    width: 128px;
-    left: 40%;
-}
-#load .message {
-    position: relative;
-    left: 40%;
-    color: #FFFFFF;
+.nav-pills > li > a {
+  border-radius: 0;
+  word-wrap: break-word;
 }
 
-#mask{
-    z-index: 500;
-    position: fixed;
-    background: transparent;
-    background-color: #ccc;
-    display: none;
-    opacity:0.5;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-
+.sidebar .header {
+  margin: 0;
+  background: #E1E1E1;
+  padding: 7px;
 }
 
+/* status boxes */
+.op-teal {
+    background-color: rgba(68, 141, 124, 0.25);
+    padding: 5px 15px 5px 15px;
+}
+
+.op-purple {
+    background-color: rgba(113, 70, 185, 0.25);
+    padding: 5px 15px 5px 15px;
+}
+
+.op-orange {
+    background-color: rgba(255, 142, 10, 0.25);
+    padding: 5px 15px 5px 15px;
+}
+
+.op-red {
+    background-color: rgba(157, 30, 75, 0.25);
+    padding: 5px 15px;
+}
+
+.op-blue {
+    background-color: rgba(68, 143, 194, 0.33);
+    padding: 5px 15px 5px 15px;
+}
+.op-green {
+    background-color: rgba(33, 180, 91, 0.38);
+    padding: 5px 15px 5px 15px;
+}
+
+/* server status styles */
 .server-offine {
     color: #FF0000;
 }
 
 .server-online {
     color: #7CFC00;
-}
-
-
-/* sidebar */
-.sidebar {
-  padding: 30px 0px 0px 0px;
-}
-.nav-pills > li > a {
-   border-radius: 0px;
-    word-wrap: break-word;
-}
-
-
-.op-teal {
-    background-color: rgba(68, 141, 124, 0.25);
-    border-bottom: 2px solid rgba(68, 141, 124, 0.05);
-    border-radius: 0px;
-    padding: 5px 15px 5px 15px;
-}
-
-.op-purple {
-    background-color: rgba(113, 70, 185, 0.25);
-    border-bottom: 2px solid rgba(113, 70, 185, 0.05);
-    border-radius: 0px;
-    padding: 5px 15px 5px 15px;
-}
-
-.op-orange {
-    background-color: rgba(255, 142, 10, 0.25);
-    border-bottom: 2px solid rgba(255, 142, 10, 0.05);
-    border-radius: 0px;
-    padding: 5px 15px 5px 15px;
-}
-
-.op-red {
-    background-color: rgba(157, 30, 75, 0.25);
-    border-bottom: 2px solid rgba(157, 30, 75, 0.05);
-    border-radius: 0px;
-    padding: 5px 15px;
-}
-
-.op-blue {
-    background-color: rgba(224, 239, 249, 1);
-    border-radius: 0px;
-    border: 1px solid rgba(68, 143, 194, 0.33);
-    padding: 5px 15px 5px 15px;
-}
-.op-green {
-    background-color: rgba(225, 255, 237, 1);
-    border-radius: 0px;
-    border: 1px solid rgba(33, 180, 91, 0.38);
-    padding: 5px 15px 5px 15px;
 }
 
 .general-stats{
@@ -133,36 +92,36 @@ a a:hover, a:active, a:focus {
 }
 
 .detail-stats {
-    background: #F5F5F5;
-    border-top: 2px solid #D8D8D8;
-    padding-top: 30px;
+  background: #F5F5F5;
+  border-top: 2px solid #D8D8D8;
+  padding-top: 30px;
 }
 .detail-stats .nav-tabs {
-    background-color: #428BCA;
-    padding: 5px;
+  background-color: #428BCA;
+  padding: 5px;
 }
 .detail-stats .nav-tabs > li > a {
-    color: #FFF;
+  color: #FFF;
 }
 
 .detail-stats .nav-tabs > li.active > a,
 .detail-stats .nav-tabs > li.active > a:hover,
 .detail-stats .nav-tabs > li.active > a:focus {
-    color: #FFF;
-    cursor: default;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.23);
-    border: 1px solid #6EA6D6;
+  color: #FFF;
+  cursor: default;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.23);
+  border: 1px solid #6EA6D6;
 }
 
 .detail-stats .nav > li > a:hover, .detail-stats .nav > li > a:focus {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.23);
-    border: 1px solid #6EA6D6;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.23);
+  border: 1px solid #6EA6D6;
 }
 
 .detail-stats .tab-content {
-    padding: 10px;
+  padding: 10px;
 }
 
 .pace {
@@ -184,7 +143,6 @@ a a:hover, a:active, a:focus {
   top: 0;
   left: 0;
   height: 5px;
-
   -webkit-transition: width 1s;
   -moz-transition: width 1s;
   -o-transition: width 1s;
@@ -194,7 +152,7 @@ a a:hover, a:active, a:focus {
 .pace .pace-progress-inner {
   display: block;
   position: absolute;
-  right: 0px;
+  right: 0;
   width: 100px;
   height: 100%;
   box-shadow: 0 0 10px #29d, 0 0 5px #29d;
@@ -247,7 +205,7 @@ a a:hover, a:active, a:focus {
 }
 
 .progress{
-  border-radius: 0px;  
+  border-radius: 0;  
 }
 
  .stats-title {
@@ -256,11 +214,12 @@ a a:hover, a:active, a:focus {
     border-top: 1px solid rgba(216, 216, 216, 1);
     border-bottom: 1px solid rgba(216, 216, 216, 1);
     font-weight: 500;
+    font-size: 2.0em;
  }
 
 .breadcrumb {
-    padding: 5px 0px 5px 0px;
-    margin-bottom: 0px;
+    padding: 5px 0 5px 0;
+    margin-bottom: 0;
     background: transparent;
 }
 .server-onoff .col-md-2 p{
@@ -279,26 +238,17 @@ a a:hover, a:active, a:focus {
     word-wrap: break-word;
 }
 
-.col-md-offset {
-  margin-left: 4.333%;
-}
-
 .timer {
-  padding: 5px 0px 0px;
+  padding: 5px 0 0;
 }
 
 /* Charts */
 .chart-row {
   background: none repeat scroll 0% 0% #DEDEDE;
   padding: 30px;
-  margin-top: 2px solid #D8D8D8;
+  border-top: 2px solid #D8D8D8;
 }
 
-.chart-legend ul {
-  list-style: none;
-  width: 100%;
-  margin: 30px auto 0;
-}
 .chart-legend li {
   text-indent: 16px;
   line-height: 24px;
@@ -323,6 +273,7 @@ a a:hover, a:active, a:focus {
 .set:before { background-color: #F4CB3D; }
 .cached:before { background-color: #1E8DAB }
 .memory:before { background-color: #804801 }
+.response:before { background: #E86B58 }
 
 .stat-label {
   font-size: 2.5em;

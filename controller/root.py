@@ -53,6 +53,7 @@ class Root(object):
         @rtype: dic'''
         return root.Root.get_first()
 
+    @cherrypy.tools.json_out()
     @cherrypy.expose
     def stats(self, server):
         '''Generate html for general status
@@ -68,7 +69,7 @@ class Root(object):
             mem_client.disconnect_all()
 
         output_html = []
-
+        online_status = False
         if len(stats) > 0:
             stats = stats[0][1]
 
@@ -124,12 +125,13 @@ class Root(object):
                           'commands_percentage': p_cmd_percentage,
                           'command_color': cmd_progress_color}
             output_html.append(stats_html.render(stats_data))
+            online_status = True
         else:
             output_html.append('<div class="alert alert-danger" '
                                'role="alert">Could not retrive '
                                'infomation, server is offline</div>')
 
-        return ''.join(output_html)
+        return { 'html' : ''.join(output_html), 'online' : online_status }
 
     @cherrypy.expose
     @cherrypy.tools.json_out()

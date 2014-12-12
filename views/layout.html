@@ -13,7 +13,11 @@
             <link rel="stylesheet" href="static/css/memdash.css" type="text/css" media="all"/>
         {%- endblock %}
         {% block hscript -%}
-            <script src="static/js/pace.min.js"></script>
+            <!--[if lt IE 10]>
+                <script src="static/js/html5shiv.js"></script>
+                <script src="static/js/respond.js"></script>
+            <![endif]-->
+            <script src="static/js/pace.js"></script>
         {%- endblock %}
     </head>
     <body>

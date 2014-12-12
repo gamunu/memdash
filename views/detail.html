@@ -11,6 +11,7 @@
     <div class="row">
         <!-- sidebar -->
         <div class="col-md-2 sidebar">
+            <div class="header">Servers</div>
             <ul id="list" class="nav nav-pills nav-stacked"></ul>
         </div> <!-- //sidebar -->
 
@@ -28,9 +29,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 stats-title">
-                    <h2>localhost:11211</h2>
-                </div>
+                <div class="col-md-12 stats-title">localhost:11211</div>
             </div>
             
             <!-- general-stats-->
@@ -44,43 +43,39 @@
                 </div>
                 <div class="col-md-12 chart-wrapper">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <h5>Hits And Misses</h5>
-                            <canvas id="hits-misses"></canvas>
+                            <canvas id="hits-misses" height="100px"></canvas>
                             <ul class="chart-legend">
                                 <li class="hits">Hits</li>
                                 <li class="misses">Misses</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <h5>Get and Set</h5>
-                            <canvas id="graph-cmds"></canvas>
+                            <canvas id="graph-cmds" height="100px"></canvas>
                             <ul class="chart-legend">
                                 <li class="get">Get</li>
                                 <li class="set">Set</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <h5>Cached Items</h5>
-                            <canvas id="graph-cacheditems"></canvas>
+                            <canvas id="graph-cacheditems" height="100px"></canvas>
                             <ul class="chart-legend">
                                 <li class="cached">Cached Items</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <h5>Memory Utilization</h5>
-                            <canvas id="graph-memory"></canvas>
+                            <canvas id="graph-memory" height="100px"></canvas>
                             <ul class="chart-legend">
                                 <li class="memory">Memory Utilization </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <h5>Response Time</h5>
-                            <canvas id="graph-response"></canvas>
+                            <canvas id="graph-response" height="100px"></canvas>
                             <ul class="chart-legend">
                                 <li class="response">Response Time</li>
                             </ul>
@@ -207,8 +202,8 @@
 {% endblock %}
 {% block fscript %}
     {{ super() }}
-    <script src="static/js/chart.min.js"></script>
-    <script type="text/javascript" src="static/js/moment.min.js"></script>
+    <script src="static/js/chart.js"></script>
+    <script type="text/javascript" src="static/js/moment.js"></script>
     <script type="text/javascript" src="static/js/daterangepicker.js"></script>
-    <script src="static/js/detail.min.js"></script>
+    <script src="static/js/detail.js"></script>
 {% endblock %}

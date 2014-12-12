@@ -6,11 +6,12 @@ window.alert = function (text) {
     return true;
 };
 
-Chart.defaults.global.scaleFontFamily = "'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
-Chart.defaults.global.scaleFontStyle = "500";
-Chart.defaults.global.scaleFontSize = 14;
-Chart.defaults.global.scaleFontColor = "#555";
-
+Chart.defaults.Line.scaleFontFamily = "'Raleway'";
+Chart.defaults.Line.scaleFontStyle = "500";
+Chart.defaults.Line.scaleFontSize = 14;
+Chart.defaults.Line.scaleFontColor = "#555";
+Chart.defaults.Line.responsive = true;
+Chart.defaults.Line.pointDotRadius = 2;
 
 var Memdash = {
     general: $('.general-stats'),
@@ -22,6 +23,13 @@ var Memdash = {
     title: $('.stats-title'),
     refresh_time: $('#refresh-time'),
     timer: 0,
+    
+    //graphs dom
+    $graph_hits: $("#hits-misses"),
+    $graph_cmds: $("#graph-cmds"),
+    $graph_cache: $("#graph-cacheditems"),
+    $graph_memory: $("#graph-memory"),
+    $graph_response: $("#graph-response"),
     
     requests: {
         general : null,
@@ -40,11 +48,12 @@ var Memdash = {
 
     changeGraphToDate: function (start, end) {
         'use strict';
-        Memdash.graphmemory.destroy();
-        Memdash.cacheditems.destroy();
-        Memdash.graphresponse.destroy();
-        Memdash.gcmds.destroy();
-        Memdash.ghits.destroy();
+        var self = this;
+        this.graphmemory.destroy();
+        this.cacheditems.destroy();
+        this.graphresponse.destroy();
+        this.gcmds.destroy();
+        this.ghits.destroy();
 
         $.get('graph/hits',
               {
@@ -53,17 +62,8 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById("hits-misses").getContext("2d");
-                Memdash.ghits = new Chart(ctx).Line(data, {
-                    pointDotRadius : 1
-                });
-                
-                if (data.labels.length > 0) {
-                    $('#hits-misses').hide().fadeIn('slow');
-                }
-                else {
-                    $('#hits-misses').hide();
-                }
+                var ctx = self.$graph_hits.get(0).getContext("2d");
+                self.ghits = new Chart(ctx).Line(data);
             });
         
         $.get('graph/cmds',
@@ -73,18 +73,8 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-cmds').getContext('2d');
-                Memdash.gcmds = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-                
-                if (data.labels.length > 0) {
-                    $('#graph-cmds').hide().fadeIn('slow');
-                }
-                else {
-                    $('#graph-cmds').hide();
-                }
+                var ctx = self.$graph_cmds.get(0).getContext("2d");
+                Memdash.gcmds = new Chart(ctx).Line(data);
             });
         
         $.get('graph/cacheditems',
@@ -94,17 +84,8 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-cacheditems').getContext('2d');
-                Memdash.cacheditems = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-                if (data.labels.length > 0) {
-                    $('#graph-cacheditems').hide().fadeIn('slow');
-                }
-                else {
-                    $('#graph-cacheditems').hide();
-                }
+                var ctx = self.$graph_cache.get(0).getContext("2d");
+                self.cacheditems = new Chart(ctx).Line(data);
             });
 
         $.get('graph/memory',
@@ -114,17 +95,8 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-memory').getContext('2d');
-                Memdash.graphmemory = new Chart(ctx).Line(data, {
-                        responsive: true,
-                        pointDotRadius : 1
-                    });
-                if (data.labels.length > 0) {
-                    $('#graph-memory').hide().fadeIn('slow');
-                }
-                else {
-                    $('#graph-memory').hide();
-                }
+                var ctx = self.$graph_memory.get(0).getContext("2d");
+                self.graphmemory = new Chart(ctx).Line(data);
             });
 
         $.get('graph/responsetime',
@@ -134,24 +106,16 @@ var Memdash = {
                 enddate : end
             },
             function (data) {
-                var ctx = document.getElementById('graph-response').getContext('2d');
-                Memdash.graphresponse = new Chart(ctx).Line(data, {
-                        responsive: true,
-                        pointDotRadius : 1
-                    });
-                if (data.labels.length > 0) {
-                    $('#graph-response').hide().fadeIn('slow');
-                }
-                else {
-                    $('#graph-response').hide();
-                }
+                var ctx = self.$graph_response.get(0).getContext("2d");
+                self.graphresponse = new Chart(ctx).Line(data);
             });
     },
 
     fetchData: function (id) {
         'use strict';
         this.requests.id = id;
-
+        var self = this;
+        
         if (this.requests.general !== null) {
             this.requests.general.abort();
             this.requests.slabs.abort();
@@ -160,120 +124,78 @@ var Memdash = {
         }
 
         $.get('stats', { server : id }, function (data) {
-                Memdash.general.html(data).hide().fadeIn('slow');
+                self.general.html(data.html).hide().fadeIn('slow');
+                if (!data.online) {
+                    $('.chart-row').fadeOut('slow');
+                } else {
+                    $('.chart-row').fadeIn('slow');
+                }
             });
 
         $.get('graph/hits', { server : id }, function (data) {
-            var ctx = document.getElementById("hits-misses").getContext("2d");
-            Memdash.ghits = new Chart(ctx).Line(data, {
-                responsive: true,
-                pointDotRadius : 1
-            });
-
-            if (data.labels.length > 0) {
-                $('#hits-misses').hide().fadeIn('slow');
-            }
-            else {
-                $('#hits-misses').hide();
-            }
+            var ctx = self.$graph_hits.get(0).getContext("2d");
+            self.ghits = new Chart(ctx).Line(data);
         });
 
         $.get('graph/cmds', { server : id }, function (data) {
-            var ctx = document.getElementById('graph-cmds').getContext('2d');
-            Memdash.gcmds = new Chart(ctx).Line(data, {
-                responsive: true,
-                pointDotRadius : 1
-            });
-            if (data.labels.length > 0) {
-                $('#graph-cmds').hide().fadeIn('slow');
-
-            }
-            else {
-                $('#graph-cmds').hide();
-            }
+            var ctx = self.$graph_cmds.get(0).getContext("2d");
+            self.gcmds = new Chart(ctx).Line(data);
         });
 
         $.get('graph/cacheditems', { server : id }, function (data) {
-            var ctx = document.getElementById('graph-cacheditems').getContext('2d');
-            Memdash.cacheditems = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-            if (data.labels.length > 0) {
-                $('#graph-cacheditems').hide().fadeIn('slow');
-            }
-            else {
-                $('#graph-cacheditems').hide();
-            }
+            var ctx = self.$graph_cache.get(0).getContext("2d");
+            self.cacheditems = new Chart(ctx).Line(data);
         });
-
         $.get('graph/memory', { server : id }, function (data) {
-            var ctx = document.getElementById('graph-memory').getContext('2d');
-            Memdash.graphmemory = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-            if (data.labels.length > 0) {
-                $('#graph-memory').hide().fadeIn('slow');
-            }
-            else {
-                $('#graph-memory').hide();
-            }
+            var ctx = self.$graph_memory.get(0).getContext("2d");
+            self.graphmemory = new Chart(ctx).Line(data);
         });
 
         $.get('graph/responsetime', { server : id }, function (data) {
-            var ctx = document.getElementById('graph-response').getContext('2d');
-            Memdash.graphresponse = new Chart(ctx).Line(data, {
-                    responsive: true,
-                    pointDotRadius : 1
-                });
-            if (data.labels.length > 0) {
-                $('#graph-response').hide().fadeIn('slow');
-            }
-            else {
-                $('#graph-response').hide();
-            }
+            var ctx = self.$graph_response.get(0).getContext("2d");
+            self.graphresponse = new Chart(ctx).Line(data);
         });
 
         this.requests.general = $.get('statst', { server : id },
                                     function (data) {
                                         if (data.length > 0) {
-                                            Memdash.statics_table.fnAddData(data);
+                                            self.statics_table.fnAddData(data);
                                         }
                                     });
 
         this.requests.slabs = $.get('slabs', { server : id },
                                     function (data) {
                                         if (data.length > 0) {
-                                            Memdash.slabs_table.fnAddData(data);
+                                            self.slabs_table.fnAddData(data);
                                         }
                                     });
 
         this.requests.items = $.get('items', { server : id },
                                     function (data) {
                                         if (data.length > 0) {
-                                            Memdash.items_table.fnAddData(data);
+                                            self.items_table.fnAddData(data);
                                         }
                                     });
 
         this.requests.settings = $.get('settings', { server : id },
                                     function (data) {
                                         if (data.length > 0) {
-                                            Memdash.settings_table.fnAddData(data);
+                                            self.settings_table.fnAddData(data);
                                         }
                                     });
     },
     
     initDataTables: function () {
         'use strict';
+        var self = this;
         //connect to the server before getting informaton
         //stats tab
         //Get generatl stats
         $.get('first')
         .done(function (data) {
             var id = data.id;
-            Memdash.title.html('<h2>' + data.address + '</h2>');
-            Memdash.fetchData(id);
+            self.title.html(data.address);
+            self.fetchData(id);
         });
     },
     clearTables: function () {
@@ -282,15 +204,15 @@ var Memdash = {
         this.slabs_table.api().clear().draw();
         this.items_table.api().clear().draw();
         this.settings_table.api().clear().draw();
-        Memdash.graphmemory.destroy();
-        Memdash.cacheditems.destroy();
-        Memdash.gcmds.destroy();
-        Memdash.ghits.destroy();
-        Memdash.graphresponse.destroy();
+        this.graphmemory.destroy();
+        this.cacheditems.destroy();
+        this.gcmds.destroy();
+        this.ghits.destroy();
+        this.graphresponse.destroy();
     },
     changeServer: function (id, server) {
         'use strict';
-        this.title.html('<h2>' + server + '</h2>');
+        this.title.html(server);
         //clear tables
         this.clearTables();
         this.fetchData(id);
@@ -299,7 +221,7 @@ var Memdash = {
 
 $(document).ready(function () {
     'use strict';
-
+    
     $.get('servers', function (data) {
         var $list = $('#list');
         $list.html(data);
@@ -340,7 +262,7 @@ $(document).ready(function () {
         });
 
         Memdash.clearTables();
-        Memdash.changeServer(requests.id);
+        Memdash.changeServer(Memdash.requests.id);
         Memdash.timer = 0;
     }, 300000);
 
