@@ -9,7 +9,7 @@ window.alert = function (text) {
 Chart.defaults.Line.scaleFontFamily = "'Raleway'";
 Chart.defaults.Line.scaleFontStyle = "500";
 Chart.defaults.Line.scaleFontSize = 14;
-Chart.defaults.Line.scaleFontColor = "#555";
+Chart.defaults.Line.scaleFontColor = "#222";
 Chart.defaults.Line.responsive = true;
 Chart.defaults.Line.pointDotRadius = 2;
 
@@ -125,10 +125,11 @@ var Memdash = {
 
         $.get('stats', { server : id }, function (data) {
                 self.general.html(data.html).hide().fadeIn('slow');
+                //TODO: Fix chart js doesn't support it yet
                 if (!data.online) {
-                    $('.chart-row').fadeOut('slow');
+                   // $('.chart-row').fadeOut('slow');
                 } else {
-                    $('.chart-row').fadeIn('slow');
+                   // $('.chart-row').fadeIn('slow');
                 }
             });
 

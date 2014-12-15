@@ -4,6 +4,8 @@ from .mdatabase import MDatabase
 from datetime import datetime
 from cherrypy import log
 
+T_FORMAT = "%y-%m-%d (%I:%M %p)"
+
 class Graph(object):
 
     @staticmethod
@@ -35,25 +37,25 @@ class Graph(object):
             for server in con.fetchall():
                 hits.append(server[0])
                 misses.append(server[1])
-                labels.append(server[2].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[2].strftime(T_FORMAT))
                 
         datasets.append({'data' : hits,
                          'label': 'Hits',
-                         'fillColor' : 'rgba(99, 123, 133, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(99, 123, 133, 0.1)',
+                         'strokeColor' : '#637b85',
+                         'pointColor' : '#637b85)',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#637b85',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         datasets.append({'data' : misses,
                          'label': 'Misses',
-                         'fillColor' : 'rgba(44, 156, 105, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(44, 156, 105, 0.1)',
+                         'strokeColor' : '#2c9c69',
+                         'pointColor' : '#2c9c69',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#2c9c69',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -85,25 +87,25 @@ class Graph(object):
             for server in con.fetchall():
                 setcmd.append(server[0])
                 getcmd.append(server[1])
-                labels.append(server[2].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[2].strftime(T_FORMAT))
                 
         datasets.append({'data' : setcmd,
                          'label': 'Set',
-                         'fillColor' : 'rgba(244, 203, 61, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(244, 203, 61, 0.1)',
+                         'strokeColor' : '#f4cb3d',
+                         'pointColor' : '#f4cb3d',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#f4cb3d',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         datasets.append({'data' : getcmd,
                          'label': 'Get',
-                         'fillColor' : 'rgba(205, 118, 23, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(205, 118, 23, 0.1)',
+                         'strokeColor' : '#cd7617',
+                         'pointColor' : '#cd7617',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#cd7617',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -133,16 +135,16 @@ class Graph(object):
             con.execute(sql_query, (sid, startdate, enddate))            
             for server in con.fetchall():
                 cached_items.append(server[0])
-                labels.append(server[1].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[1].strftime(T_FORMAT))
                 
         datasets.append({'data' : cached_items,
                          'label': 'Cached Items',
-                         'fillColor' : '#1E8DAB',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(30, 141, 171, 0.1)',
+                         'strokeColor' : '#1E8DAB',
+                         'pointColor' : '#1E8DAB',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#1E8DAB',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -172,16 +174,16 @@ class Graph(object):
             con.execute(sql_query, (sid, startdate, enddate))          
             for server in con.fetchall():
                 memory.append(server[0])
-                labels.append(server[1].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[1].strftime(T_FORMAT))
                 
         datasets.append({'data' : memory,
                          'label': 'Memory',
-                         'fillColor' : '#804801',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(128, 72, 1, 0.1)',
+                         'strokeColor' : '#804801',
+                         'pointColor' : '#804801',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#804801',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
 
@@ -211,16 +213,16 @@ class Graph(object):
             con.execute(sql_query, (sid, startdate, enddate))          
             for server in con.fetchall():
                 response_time.append(server[0])
-                labels.append(server[1].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[1].strftime(T_FORMAT))
                 
         datasets.append({'data' : response_time,
                          'label': 'Response Time',
-                         'fillColor' : '#E86B58',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(232, 107, 88, 0.1)',
+                         'strokeColor' : '#E86B58',
+                         'pointColor' : '#E86B58',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#E86B58',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
 
@@ -251,25 +253,25 @@ class Graph(object):
             for server in con.fetchall():
                 hits.append(server[0])
                 misses.append(server[1])
-                labels.append(server[2].strftime("%H:%M:%S"))
+                labels.append(server[2].strftime(T_FORMAT))
                 
         datasets.append({'data' : hits,
                          'label': 'Hits',
-                         'fillColor' : 'rgba(99, 123, 133, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(99, 123, 133, 0.1)',
+                         'strokeColor' : '#637b85',
+                         'pointColor' : '#637b85',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#637b85',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         datasets.append({'data' : misses,
                          'label': 'Misses',
-                         'fillColor' : 'rgba(44, 156, 105, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(44, 156, 105, 0.1)',
+                         'strokeColor' : '#2c9c69',
+                         'pointColor' : '#2c9c69',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#2c9c69',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -300,25 +302,25 @@ class Graph(object):
             for server in con.fetchall():
                 setcmd.append(server[0])
                 getcmd.append(server[1])
-                labels.append(server[2].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[2].strftime(T_FORMAT))
                 
         datasets.append({'data' : setcmd,
                          'label': 'Set',
-                         'fillColor' : 'rgba(244, 203, 61, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(244, 203, 61, 0.1)',
+                         'strokeColor' : '#f4cb3d',
+                         'pointColor' : '#f4cb3d',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#f4cb3d',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         datasets.append({'data' : getcmd,
                          'label': 'Get',
-                         'fillColor' : 'rgba(205, 118, 23, 0.5)',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(205, 118, 23, 0.1)',
+                         'strokeColor' : '#cd7617',
+                         'pointColor' : '#cd7617',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#cd7617',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -348,16 +350,16 @@ class Graph(object):
             con.execute(sql_query, (startdate, enddate))       
             for server in con.fetchall():
                 cached_items.append(server[0])
-                labels.append(server[1].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[1].strftime(T_FORMAT))
                 
         datasets.append({'data' : cached_items,
                          'label': 'Cached Items',
-                         'fillColor' : '#1E8DAB',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(30, 141, 171, 0.1)',
+                         'strokeColor' : '#1E8DAB',
+                         'pointColor' : '#1E8DAB',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#1E8DAB',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
     
@@ -387,16 +389,16 @@ class Graph(object):
             con.execute(sql_query, (startdate, enddate))        
             for server in con.fetchall():
                 memory.append(server[0])
-                labels.append(server[1].strftime("%Y-%m-%d %H:%M"))
+                labels.append(server[1].strftime(T_FORMAT))
                 
         datasets.append({'data' : memory,
                          'label': 'Memory',
-                         'fillColor' : '#804801',
-                         'strokeColor' : 'rgba(220,220,220,1)',
-                         'pointColor' : 'rgba(220,220,220,1)',
-                         'pointStrokeColor' : '#fff',
-                         'pointHighlightFill' : '#fff',
-                         'pointHighlightStroke' : 'rgba(220,220,220,1)'
+                         'fillColor' : 'rgba(128, 72, 1, 0.1)',
+                         'strokeColor' : '#804801',
+                         'pointColor' : '#804801',
+                         'pointStrokeColor' : '#ffffff',
+                         'pointHighlightFill' : '#804801',
+                         'pointHighlightStroke' : '#ffffff'
                         })
         return {'datasets' : datasets, 'labels' : labels}
 

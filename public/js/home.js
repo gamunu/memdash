@@ -9,7 +9,7 @@ window.alert = function (text) {
 Chart.defaults.Line.scaleFontFamily = "'Raleway'";
 Chart.defaults.Line.scaleFontStyle = "500";
 Chart.defaults.Line.scaleFontSize = 14;
-Chart.defaults.Line.scaleFontColor = "#555";
+Chart.defaults.Line.scaleFontColor = "#222";
 Chart.defaults.Line.responsive = true;
 Chart.defaults.Line.pointDotRadius = 2;
 

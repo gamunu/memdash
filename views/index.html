@@ -7,7 +7,7 @@
 {% endblock %}
 {% block body %}
 <!-- layout -->
-<div id="layout" class="container-fluid">
+<div id="layout" class="container">
     <div class="row">
         <div class="col-md-12">
              <div class="row">
@@ -24,24 +24,26 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h2>Servers</h2>
+                        <div class="col-md-12 server-status">
+                            <h2>Server status</h2>
                             <div class="row server-onoff"></div>
                         </div>
                         <div class="col-md-12">
-                            <h2>Overall Statistics</h2>
+                            <div class="row stats-title">
+                                <h2>Overall Statistics</h2>
+                            </div>
+                            <div class="row general-stats"></div>                            
                         </div>
-                        <div class="col-md-12 general-stats"></div>
-                        <!-- graph status -->
-                        <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                            <span></span> <b class="caret"></b>
-                        </div>
-                        <div class="col-md-12 chart-wrapper">
-                            <div class="row">
+                        <!-- graph status -->                        
+                        <div class="col-md-12">
+                            <div class="row chart-row">
+                                <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                    <span></span> <b class="caret"></b>
+                                </div>
                                 <div class="col-md-10 col-md-offset-1">
                                     <h4>Hits And Misses</h5>
-                                    <canvas id="hits-misses" height="90px"></canvas>
+                                    <canvas id="hits-misses" width="300px" height="120px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="hits">Hits</li>
                                         <li class="misses">Misses</li>
@@ -49,7 +51,7 @@
                                 </div>
                                 <div class="col-md-10 col-md-offset-1">
                                     <h5>Get and Set</h5>
-                                    <canvas id="graph-cmds" height="90px"></canvas>
+                                    <canvas id="graph-cmds" width="300px" height="120px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="get">Get</li>
                                         <li class="set">Set</li>
@@ -57,14 +59,14 @@
                                 </div>
                                 <div class="col-md-10 col-md-offset-1">
                                     <h5>Cached Items</h5>
-                                    <canvas id="graph-cacheditems" height="90px"></canvas>
+                                    <canvas id="graph-cacheditems" width="300px" height="120px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="cached">Cached Items</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-10 col-md-offset-1">
-                                    <h5>Memory Utilization</h5>
-                                    <canvas id="graph-memory" height="90px"></canvas>
+                                    <h5>Memory Utilization (MB)</h5>
+                                    <canvas id="graph-memory" width="300px" height="120px"></canvas>
                                     <ul class="chart-legend">
                                         <li class="memory">Memory Utilization </li>
                                     </ul>
